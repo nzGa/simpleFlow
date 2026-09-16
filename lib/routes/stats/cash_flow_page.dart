@@ -1,6 +1,10 @@
+import "dart:math" as math;
+
 import "package:auto_size_text/auto_size_text.dart";
 import "package:flow/data/flow_standard_report.dart";
 import "package:flow/data/money.dart";
+import "package:flow/data/setup/default_categories.dart";
+import "package:flow/entity/category.dart";
 import "package:flow/l10n/extensions.dart";
 import "package:flow/objectbox.dart";
 import "package:flow/objectbox/actions.dart";
@@ -20,10 +24,15 @@ import "package:flow/widgets/time_range_selector.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 
-/// Cash-flow Sankey.
+/// Cash-flow Sankey in the classic budget shape.
 ///
-/// Income categories flow through a single total hub into spending categories
-/// (plus a balancing "Saved" / "From reserves" node) for the current month.
+/// Gross income (income categories stacked in one bar) peels taxes when
+/// present, continues as net income, then fans out to expense categories
+/// plus surplus. A month with no income (or spending above income) keeps
+/// the two-column "From reserves" fallback so the chart stays readable.
+/// Category icon colors are ignored: left bars use
+/// [sankeyIncomePalette], expenses use [sankeyExpensePalette], and
+/// surplus uses the theme income color so it cannot collide with either.
 class CashFlowPage extends StatefulWidget {
   const CashFlowPage({super.key});
 
@@ -42,8 +51,7 @@ class _CashFlowPageState extends State<CashFlowPage>
   bool missingRates = false;
   bool failed = false;
 
-  List<SankeyDatum> sources = [];
-  List<SankeyDatum> targets = [];
+  BudgetSankeyLayout layout = const BudgetSankeyLayout(left: [], right: []);
   double totalIncome = 0.0;
   double totalExpense = 0.0;
 
@@ -56,7 +64,7 @@ class _CashFlowPageState extends State<CashFlowPage>
 
   @override
   Widget build(BuildContext context) {
-    final bool hasData = sources.isNotEmpty && targets.isNotEmpty;
+    final bool hasData = !layout.isEmpty;
     final double net = totalIncome - totalExpense;
 
     final FlowStandardReport? stats = report;
@@ -74,7 +82,7 @@ class _CashFlowPageState extends State<CashFlowPage>
     return Scaffold(
       appBar: StatsAppBar(title: "tabs.stats.analytics.cashFlow".t(context)),
       body: SafeArea(
-        child: busy && sources.isEmpty
+        child: busy && layout.isEmpty
             ? const Spinner.center()
             : SingleChildScrollView(
                 child: Column(
@@ -108,19 +116,29 @@ class _CashFlowPageState extends State<CashFlowPage>
                       )
                     else if (hasData) ...[
                       Frame(
-                        child: SankeyDiagram(
-                          sources: sources,
-                          targets: targets,
+                        child: SankeyDiagram.fromLayout(
+                          layout: layout,
+                          height: math.max(
+                            layout.isClassic ? 320.0 : 280.0,
+                            math.max(layout.left.length, layout.right.length) *
+                                40.0,
+                          ),
                         ),
                       ),
                       const SizedBox(height: 24.0),
                       ListHeader("tabs.stats.analytics.income".t(context)),
                       const SizedBox(height: 8.0),
-                      CashFlowLegend(data: sources, currency: primaryCurrency),
+                      CashFlowLegend(
+                        data: layout.left,
+                        currency: primaryCurrency,
+                      ),
                       const SizedBox(height: 16.0),
                       ListHeader("tabs.stats.analytics.spending".t(context)),
                       const SizedBox(height: 8.0),
-                      CashFlowLegend(data: targets, currency: primaryCurrency),
+                      CashFlowLegend(
+                        data: [?layout.taxes, ...layout.right],
+                        currency: primaryCurrency,
+                      ),
                     ] else
                       StatsEmptyState(
                         message: "tabs.stats.analytics.cashFlow.empty".t(
@@ -234,78 +252,74 @@ class _CashFlowPageState extends State<CashFlowPage>
       final Color otherColor = context.colorScheme.onSurface.withAlpha(0x66);
       final Color incomeColor = context.flowColors.income;
       final Color expenseColor = context.flowColors.expense;
-      final List<Color> palette = context.chartAccents;
+      final Brightness brightness = Theme.of(context).brightness;
+      final List<Color> incomePalette = sankeyIncomePalette(brightness);
+      final List<Color> expensePalette = sankeyExpensePalette(brightness);
 
       final List<SankeyDatum> incomeNodes = [];
       final List<SankeyDatum> expenseNodes = [];
+      final List<SankeyDatum> taxNodes = [];
       double income = 0.0;
       double expense = 0.0;
-      int colorIndex = 0;
 
       for (final entry in analytics.flow.entries) {
         final flow = entry.value;
         final single = flow.merge(primaryCurrency, rates);
         missing = missing || single.hasMissingData;
 
+        final Category? category = flow.associatedData;
         final String name =
-            flow.associatedData?.name ??
-            "tabs.stats.analytics.uncategorized".tr();
-        final Color color =
-            flow.associatedData?.colorScheme?.primary ??
-            palette[colorIndex++ % palette.length];
+            category?.name ?? "tabs.stats.analytics.uncategorized".tr();
+        final bool isTax = categoryIsTax(category);
 
         final double incomeAmount = single.totalIncome.amount;
         final double expenseAmount = single.totalExpense.amount.abs();
 
         if (incomeAmount > 0) {
           incomeNodes.add(
-            SankeyDatum(label: name, value: incomeAmount, color: color),
+            SankeyDatum(label: name, value: incomeAmount, color: otherColor),
           );
           income += incomeAmount;
         }
         if (expenseAmount > 0) {
-          expenseNodes.add(
-            SankeyDatum(label: name, value: expenseAmount, color: color),
+          final SankeyDatum node = SankeyDatum(
+            label: name,
+            value: expenseAmount,
+            color: otherColor,
           );
+          if (isTax) {
+            taxNodes.add(node);
+          } else {
+            expenseNodes.add(node);
+          }
           expense += expenseAmount;
         }
       }
 
-      final List<SankeyDatum> nextSources = _bucket(
-        incomeNodes,
-        _maxIncomeNodes,
-        otherColor,
+      layout = buildBudgetSankeyLayout(
+        income: _bucket(
+          incomeNodes,
+          _maxIncomeNodes,
+          otherColor,
+          incomePalette,
+        ),
+        expenses: _bucket(
+          expenseNodes,
+          _maxExpenseNodes,
+          otherColor,
+          expensePalette,
+        ),
+        taxes: taxNodes,
+        netColor: sankeyNetColor(brightness),
+        surplusColor: incomeColor,
+        deficitColor: expenseColor,
+        taxColor: sankeyTaxColor(brightness),
+        grossLabel: "tabs.stats.analytics.cashFlow.grossIncome".tr(),
+        netLabel: "tabs.stats.analytics.cashFlow.netIncome".tr(),
+        surplusLabel: "tabs.stats.analytics.saved".tr(),
+        fromReservesLabel: "tabs.stats.analytics.cashFlow.fromReserves".tr(),
+        taxesLabel: "tabs.stats.analytics.cashFlow.taxes".tr(),
       );
-      final List<SankeyDatum> nextTargets = _bucket(
-        expenseNodes,
-        _maxExpenseNodes,
-        otherColor,
-      );
-
-      // Balance the two sides so the hub is fully covered: surplus becomes a
-      // "Saved" target, a deficit becomes a "From reserves" source.
-      final double net = income - expense;
-      final double threshold = (income > expense ? income : expense) * 0.001;
-      if (net > threshold) {
-        nextTargets.add(
-          SankeyDatum(
-            label: "tabs.stats.analytics.saved".tr(),
-            value: net,
-            color: incomeColor,
-          ),
-        );
-      } else if (net < -threshold) {
-        nextSources.add(
-          SankeyDatum(
-            label: "tabs.stats.analytics.cashFlow.fromReserves".tr(),
-            value: -net,
-            color: expenseColor,
-          ),
-        );
-      }
-
-      sources = nextSources;
-      targets = nextTargets;
       totalIncome = income;
       totalExpense = expense;
       missingRates = missing;
@@ -313,8 +327,7 @@ class _CashFlowPageState extends State<CashFlowPage>
       // Aggregation should be resilient to bad data now, but never leave the
       // page silently showing zeros if something unexpected throws.
       error = true;
-      sources = [];
-      targets = [];
+      layout = const BudgetSankeyLayout(left: [], right: []);
       totalIncome = 0.0;
       totalExpense = 0.0;
     } finally {
@@ -325,17 +338,31 @@ class _CashFlowPageState extends State<CashFlowPage>
   }
 
   /// Keeps the top [max] nodes by value and rolls the rest into "Other".
+  ///
+  /// Colors come from [palette] (largest first), not from category icons.
+  /// "Other" stays [otherColor]. Surplus / "From reserves" / taxes are
+  /// painted later with dedicated colors so they stay unique.
   List<SankeyDatum> _bucket(
     List<SankeyDatum> nodes,
     int max,
     Color otherColor,
+    List<Color> palette,
   ) {
     final List<SankeyDatum> sorted = [...nodes]
       ..sort((a, b) => b.value.compareTo(a.value));
 
-    if (sorted.length <= max) return sorted;
+    final int kept = sorted.length <= max ? sorted.length : max - 1;
+    final List<SankeyDatum> top = [
+      for (int i = 0; i < kept; i++)
+        SankeyDatum(
+          label: sorted[i].label,
+          value: sorted[i].value,
+          color: palette[i % palette.length],
+        ),
+    ];
 
-    final List<SankeyDatum> top = sorted.take(max - 1).toList();
+    if (sorted.length <= max) return top;
+
     final double otherSum = sorted
         .skip(max - 1)
         .fold(0.0, (sum, node) => sum + node.value);

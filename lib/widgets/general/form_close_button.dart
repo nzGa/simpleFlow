@@ -12,12 +12,25 @@ class FormCloseButton extends StatefulWidget {
   final bool Function() canPop;
   final bool center;
 
-  const FormCloseButton({super.key, required this.canPop, this.center = true});
+  /// If set, used instead of [GoRouter.pop] so callers can dismiss
+  /// overlays (e.g. a category sheet) before leaving the page.
+  final VoidCallback? onClose;
+
+  const FormCloseButton({
+    super.key,
+    required this.canPop,
+    this.center = true,
+    this.onClose,
+  });
 
   @override
   State<FormCloseButton> createState() => _FormCloseButtonState();
 
-  static void _pop(BuildContext context) {
+  void close(BuildContext context) {
+    if (onClose != null) {
+      onClose!();
+      return;
+    }
     context.pop();
   }
 }
@@ -48,7 +61,7 @@ class _FormCloseButtonState extends State<FormCloseButton> {
 
   void onPressed(BuildContext context) async {
     if (widget.canPop()) {
-      context.pop();
+      widget.close(context);
       return;
     }
 
@@ -67,7 +80,7 @@ class _FormCloseButtonState extends State<FormCloseButton> {
       if (confirmPop != true) return;
 
       if (context.mounted) {
-        FormCloseButton._pop(context);
+        widget.close(context);
       }
     } finally {
       sheetShown = false;

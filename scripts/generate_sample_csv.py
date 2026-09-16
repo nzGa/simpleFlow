@@ -5,7 +5,10 @@
 
 The Profile button loads assets/sample_import.csv. Positive amounts are
 income; negative amounts are expenses. Transfers are two rows with the
-same title, time, and opposite amounts.
+same title, time, and opposite amounts (no category). Categorized
+inflows use only Nómina. Opening balances stay uncategorized so they
+are not tagged with expense categories. There is no category named
+Ahorrado — that word is a cash-flow surplus label, not sample data.
 """
 
 from __future__ import annotations
@@ -54,7 +57,6 @@ REGALOS = "Regalos"
 DONACIONES = "Donaciones"
 EDUCACION = "Educación"
 DISPOSITIVOS = "Dispositivos"
-SERVICIOS = "Servicios"
 SEGUROS = "Seguros"
 IMPUESTOS = "Impuestos"
 HIGIENE = "Higiene"
@@ -169,6 +171,8 @@ class Ledger:
 
 
 def seed_opening_balances(ledger: Ledger, start: date) -> None:
+    # Leave uncategorized: these are starting balances, not income, and
+    # must not land on expense categories such as Servicios.
     opening = datetime.combine(start, time(9, 0, 0))
     ledger.add(opening, PRINCIPAL, 2_100_000.00, "Saldo inicial")
     ledger.add(opening, EFECTIVO, 68_500.00, "Saldo inicial")
@@ -327,7 +331,7 @@ def add_payday(ledger: Ledger, rng: random.Random, day: date) -> None:
         PRINCIPAL,
         money(rng, 180_000, 420_000, 0),
         extra_title,
-        SERVICIOS if extra_title != "Bonus" else NOMINA,
+        NOMINA,
     )
 
     if ledger.balances[PRINCIPAL] >= 480_000:
@@ -358,7 +362,7 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
             PRINCIPAL,
             money(rng, 220_000, 480_000, 0),
             pick(rng, ["Freelance diseño", "Consultoría", "Proyecto puntual"]),
-            SERVICIOS,
+            NOMINA,
         )
 
     if day.day == 15:
@@ -367,7 +371,7 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
             DOLARES,
             money(rng, 280, 480, 2),
             "Freelance USD",
-            SERVICIOS,
+            NOMINA,
             "Cliente en el exterior",
         )
 
@@ -377,7 +381,7 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
             PRINCIPAL,
             money(rng, 12_000, 68_000, 0),
             "Reintegro OSDE",
-            SALUD,
+            NOMINA,
         )
 
     last = _days_in_month(day.year, day.month)
@@ -389,7 +393,7 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
                 AHORROS,
                 interest,
                 "Interés caja de ahorro",
-                SERVICIOS,
+                NOMINA,
             )
 
     if chance(rng, 0.06):
@@ -406,7 +410,7 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
             PRINCIPAL,
             money(rng, 18_000, 110_000, 0),
             title,
-            SERVICIOS,
+            NOMINA,
         )
 
     if day.month == 4 and day.day == 19:
@@ -415,7 +419,7 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
             EFECTIVO,
             45_000.00,
             "Regalo familia",
-            REGALOS,
+            NOMINA,
         )
 
 
@@ -717,6 +721,30 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _assert_sample_invariants(ledger: Ledger) -> None:
+    pos_by_cat: dict[str, tuple[int, float]] = {}
+    for _, _, row in ledger.rows:
+        title, _, _, amount_s, *_, category = row
+        amount = float(amount_s)
+        if category == "Ahorrado":
+            raise ValueError(
+                f"{title!r} must not use category Ahorrado "
+                "(that is a surplus chart label, not a category)"
+            )
+        if amount > 0 and category:
+            n, total = pos_by_cat.get(category, (0, 0.0))
+            pos_by_cat[category] = (n + 1, total + amount)
+            if category != NOMINA:
+                raise ValueError(
+                    f"Income {title!r} uses {category!r}, expected {NOMINA}"
+                )
+        if amount < 0 and category in {NOMINA, "Ahorrado"}:
+            raise ValueError(
+                f"Expense {title!r} uses forbidden category {category!r}"
+            )
+    print("Positive categorized amounts:", dict(pos_by_cat))
+
+
 def main() -> None:
     args = parse_args()
     seed = (
@@ -725,6 +753,7 @@ def main() -> None:
         else int(args.today.strftime("%Y%m%d"))
     )
     ledger = generate(args.today, seed)
+    _assert_sample_invariants(ledger)
     ledger.write(args.output)
     print(f"Wrote {len(ledger.rows)} transactions to {args.output} (seed={seed})")
     print("Balances:", ledger.balances)

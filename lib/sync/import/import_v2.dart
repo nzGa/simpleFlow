@@ -1,6 +1,7 @@
 import "dart:async";
 import "dart:io";
 
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/entity/account.dart";
 import "package:flow/entity/backup_entry.dart";
 import "package:flow/entity/budget.dart";
@@ -106,6 +107,7 @@ class ImportV2 extends Importer {
 
     // 1. Resurrect [Category]s
     progressNotifier.value = ImportV2Progress.writingCategories;
+    markIncomeCategories(data.categories);
     await ObjectBox().box<Category>().putManyAsync(data.categories);
     _log.fine("Imported ${data.categories.length} categories");
 

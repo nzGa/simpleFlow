@@ -1,3 +1,4 @@
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/providers/categories_provider.dart";
 import "package:flow/entity/category.dart";
 import "package:flow/entity/transaction/type.dart";
@@ -22,18 +23,16 @@ class SelectCategorySheet extends StatefulWidget {
 
   final bool showTrailing;
 
-  /// Categories are sorted by frecency for this transaction type so that —
-  /// for example — an income category isn't surfaced first while logging an
-  /// expense. Defaults to [TransactionType.expense] since that's the
-  /// overwhelmingly common case for unspecified callers (e.g. bulk edits).
-  final TransactionType transactionType;
+  /// When set, only matching income or expense categories are listed.
+  /// Null shows every category (bulk edits of mixed types).
+  final TransactionType? transactionType;
 
   const SelectCategorySheet({
     super.key,
     this.currentlySelectedCategoryId,
     this.showSearchBar,
     this.showTrailing = true,
-    this.transactionType = TransactionType.expense,
+    this.transactionType,
   });
 
   @override
@@ -45,19 +44,31 @@ class _SelectCategorySheetState extends State<SelectCategorySheet> {
 
   @override
   Widget build(BuildContext context) {
-    final List<Category> categories = CategoriesProvider.of(
+    List<Category> categories = CategoriesProvider.of(
       context,
     ).categoriesFor(widget.transactionType);
+    if (widget.transactionType == TransactionType.income) {
+      categories = pinPaycheckCategory(
+        categories,
+        localizedPaycheckName: "setup.categories.preset.paychecks".t(context),
+      );
+    }
     final bool showSearchBar = widget.showSearchBar ?? categories.length > 6;
     final List<Category> results = simpleSortByQuery(categories, _query);
+    final String titleKey = widget.transactionType == TransactionType.income
+        ? "transaction.edit.selectCategory.income"
+        : "transaction.edit.selectCategory";
 
     return ModalSheet.scrollable(
-      title: Text("transaction.edit.selectCategory".t(context)),
+      title: Text(titleKey.t(context)),
       trailing: ModalOverflowBar(
         alignment: .end,
         children: [
           TextButton.icon(
-            onPressed: () => context.push("/category/new"),
+            onPressed: () => context.push(
+              "/category/new",
+              extra: widget.transactionType == TransactionType.income,
+            ),
             icon: const Icon(Symbols.add_rounded),
             label: Text("general.new".t(context)),
           ),
@@ -80,24 +91,27 @@ class _SelectCategorySheetState extends State<SelectCategorySheet> {
               ),
             )
           : null,
-      child: SingleChildScrollView(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ...results.map(
-              (category) => ListTile(
-                key: ValueKey(category.uuid),
-                title: Text(category.name),
-                leading: FlowIcon(
-                  category.icon,
-                  colorScheme: category.colorScheme,
+      child: Material(
+        type: MaterialType.transparency,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ...results.map(
+                (category) => ListTile(
+                  key: ValueKey(category.uuid),
+                  title: Text(category.name),
+                  leading: FlowIcon(
+                    category.icon,
+                    colorScheme: category.colorScheme,
+                  ),
+                  trailing: widget.showTrailing ? LeChevron() : null,
+                  onTap: () => context.pop(Optional(category)),
+                  selected: widget.currentlySelectedCategoryId == category.id,
                 ),
-                trailing: widget.showTrailing ? LeChevron() : null,
-                onTap: () => context.pop(Optional(category)),
-                selected: widget.currentlySelectedCategoryId == category.id,
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

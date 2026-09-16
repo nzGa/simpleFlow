@@ -37,6 +37,11 @@ class Category implements EntityBase {
 
   String? colorSchemeName;
 
+  /// Income categories (paychecks / Nómina, and user-created income cats).
+  ///
+  /// New ObjectBox property; existing rows default to `false`.
+  bool isIncome;
+
   @Transient()
   FlowColorScheme? get colorScheme => getThemeStrict(colorSchemeName);
 
@@ -55,6 +60,7 @@ class Category implements EntityBase {
     required this.iconCode,
     DateTime? createdDate,
     this.colorSchemeName,
+    this.isIncome = false,
   }) : createdDate = createdDate ?? DateTime.now(),
        uuid = const Uuid().v4();
 
@@ -63,6 +69,7 @@ class Category implements EntityBase {
     required this.iconCode,
     required this.uuid,
     this.colorSchemeName,
+    this.isIncome = false,
   }) : createdDate = DateTime.now(),
        id = -1;
 

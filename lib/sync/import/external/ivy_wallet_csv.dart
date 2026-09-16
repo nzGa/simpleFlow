@@ -1,6 +1,7 @@
 import "dart:async";
 
 import "package:flow/data/flow_icon.dart";
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/entity/account.dart";
 import "package:flow/entity/backup_entry.dart";
 import "package:flow/entity/category.dart";
@@ -109,6 +110,7 @@ class IvyWalletCsvImporter extends Importer<IvyWalletCsv> {
                     name,
                     fallback: IconFlowIcon(Symbols.category_rounded),
                   ).toString(),
+                  isIncome: isIncomeCategoryName(name),
                 ),
               )
               .toList(),

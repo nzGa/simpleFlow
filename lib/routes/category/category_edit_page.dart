@@ -24,10 +24,15 @@ import "package:material_symbols_icons_flow/symbols.dart";
 class CategoryEditPage extends StatefulWidget {
   final int categoryId;
 
+  /// Used when creating a category from an income picker.
+  final bool isIncome;
+
   bool get isNewCategory => categoryId == 0;
 
-  const CategoryEditPage.create({super.key}) : categoryId = 0;
-  const CategoryEditPage({super.key, required this.categoryId});
+  const CategoryEditPage.create({super.key, this.isIncome = false})
+    : categoryId = 0;
+  const CategoryEditPage({super.key, required this.categoryId})
+    : isIncome = false;
 
   @override
   State<CategoryEditPage> createState() => _CategoryEditPageState();
@@ -43,6 +48,8 @@ class _CategoryEditPageState extends State<CategoryEditPage> {
   late final Category? _currentlyEditing;
 
   String? _colorSchemeName;
+
+  bool _isIncome = false;
 
   String get iconCodeOrError =>
       _iconData?.toString() ??
@@ -66,6 +73,7 @@ class _CategoryEditPageState extends State<CategoryEditPage> {
       );
       _iconData = _currentlyEditing?.icon;
       _colorSchemeName = _currentlyEditing?.colorSchemeName;
+      _isIncome = _currentlyEditing?.isIncome ?? widget.isIncome;
     }
   }
 
@@ -134,6 +142,13 @@ class _CategoryEditPageState extends State<CategoryEditPage> {
                     });
                   },
                 ),
+                const SizedBox(height: 12.0),
+                SwitchListTile(
+                  secondary: const Icon(Symbols.payments_rounded),
+                  value: _isIncome,
+                  onChanged: (value) => setState(() => _isIncome = value),
+                  title: Text("category.income".t(context)),
+                ),
                 if (_currentlyEditing != null) ...[
                   const SizedBox(height: 36.0),
                   DeleteButton(
@@ -156,6 +171,7 @@ class _CategoryEditPageState extends State<CategoryEditPage> {
     _currentlyEditing.name = formattedName;
     _currentlyEditing.iconCode = iconCodeOrError;
     _currentlyEditing.colorSchemeName = _colorSchemeName;
+    _currentlyEditing.isIncome = _isIncome;
 
     ObjectBox().box<Category>().put(_currentlyEditing, mode: PutMode.update);
 
@@ -175,6 +191,7 @@ class _CategoryEditPageState extends State<CategoryEditPage> {
       name: trimmed,
       iconCode: iconCodeOrError,
       colorSchemeName: _colorSchemeName,
+      isIncome: _isIncome,
     );
 
     unawaited(
@@ -190,7 +207,8 @@ class _CategoryEditPageState extends State<CategoryEditPage> {
     if (_currentlyEditing != null) {
       return _currentlyEditing.name != _nameTextController.text.trim() ||
           _currentlyEditing.iconCode != iconCodeOrError ||
-          _currentlyEditing.colorSchemeName != _colorSchemeName;
+          _currentlyEditing.colorSchemeName != _colorSchemeName ||
+          _currentlyEditing.isIncome != _isIncome;
     }
 
     return _nameTextController.text.trim().isNotEmpty ||

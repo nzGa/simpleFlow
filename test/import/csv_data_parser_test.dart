@@ -1,5 +1,6 @@
 import "dart:io";
 
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/sync/import/sample_csv.dart";
 import "package:flow/sync/model/csv/parsed_data.dart";
 import "package:flow/sync/model/csv/parsers.dart";
@@ -63,5 +64,23 @@ void main() {
     );
     expect(incomes.length, greaterThanOrEqualTo(30));
     expect(incomes.any((t) => t.title == "Sueldo"), isTrue);
+    expect(incomes.every((t) => t.category == "Nómina"), isTrue);
+
+    final positiveCategorized = sample.transactions.where(
+      (t) => t.amount > 0 && (t.category ?? "").isNotEmpty,
+    );
+    expect(positiveCategorized.every((t) => t.category == "Nómina"), isTrue);
+    expect(positiveCategorized.any((t) => t.category == "Servicios"), isFalse);
+    expect(sample.transactions.any((t) => t.category == "Ahorrado"), isFalse);
+    expect(sample.categoryNames.contains("Ahorrado"), isFalse);
+    expect(
+      sample.transactions
+          .where((t) => t.amount < 0)
+          .any((t) => t.category == "Nómina" || t.category == "Ahorrado"),
+      isFalse,
+    );
+    expect(sample.categoryNames.nonNulls.where(isIncomeCategoryName).toSet(), {
+      "Nómina",
+    });
   });
 }

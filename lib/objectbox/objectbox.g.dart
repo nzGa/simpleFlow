@@ -123,7 +123,7 @@ final _entities = <obx_int.ModelEntity>[
   obx_int.ModelEntity(
     id: const obx_int.IdUid(2, 649350347514211469),
     name: 'Category',
-    lastPropertyId: const obx_int.IdUid(10, 8207473128907508304),
+    lastPropertyId: const obx_int.IdUid(11, 2328304180011648156),
     flags: 0,
     properties: <obx_int.ModelProperty>[
       obx_int.ModelProperty(
@@ -162,6 +162,12 @@ final _entities = <obx_int.ModelEntity>[
         id: const obx_int.IdUid(10, 8207473128907508304),
         name: 'colorSchemeName',
         type: 9,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(11, 2328304180011648156),
+        name: 'isIncome',
+        type: 1,
         flags: 0,
       ),
     ],
@@ -1205,13 +1211,14 @@ obx_int.ModelDefinition getObjectBoxModel() {
         final colorSchemeNameOffset = object.colorSchemeName == null
             ? null
             : fbb.writeString(object.colorSchemeName!);
-        fbb.startTable(11);
+        fbb.startTable(12);
         fbb.addInt64(0, object.id);
         fbb.addOffset(1, uuidOffset);
         fbb.addInt64(2, object.createdDate.millisecondsSinceEpoch);
         fbb.addOffset(3, nameOffset);
         fbb.addOffset(5, iconCodeOffset);
         fbb.addOffset(9, colorSchemeNameOffset);
+        fbb.addBool(10, object.isIncome);
         fbb.finish(fbb.endTable());
         return object.id;
       },
@@ -1236,6 +1243,12 @@ obx_int.ModelDefinition getObjectBoxModel() {
         final colorSchemeNameParam = const fb.StringReader(
           asciiOptimization: true,
         ).vTableGetNullable(buffer, rootOffset, 22);
+        final isIncomeParam = const fb.BoolReader().vTableGet(
+          buffer,
+          rootOffset,
+          24,
+          false,
+        );
         final object =
             Category(
                 id: idParam,
@@ -1243,6 +1256,7 @@ obx_int.ModelDefinition getObjectBoxModel() {
                 iconCode: iconCodeParam,
                 createdDate: createdDateParam,
                 colorSchemeName: colorSchemeNameParam,
+                isIncome: isIncomeParam,
               )
               ..uuid = const fb.StringReader(
                 asciiOptimization: true,
@@ -2358,6 +2372,11 @@ class Category_ {
   /// See [Category.colorSchemeName].
   static final colorSchemeName = obx.QueryStringProperty<Category>(
     _entities[1].properties[5],
+  );
+
+  /// See [Category.isIncome].
+  static final isIncome = obx.QueryBooleanProperty<Category>(
+    _entities[1].properties[6],
   );
 
   /// see [Category.transactions]
