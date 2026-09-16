@@ -1,5 +1,6 @@
 import "package:flow/data/exchange_rates.dart";
 import "package:flow/data/money.dart";
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/data/transaction_programmable_object.dart";
 import "package:flow/entity/account.dart";
 import "package:flow/entity/category.dart";
@@ -76,6 +77,15 @@ class _TransactionPageState extends State<TransactionPage> {
 
   bool get isTransfer => _transactionType == TransactionType.transfer;
 
+  bool get _isIncome => _transactionType == TransactionType.income;
+
+  String get _categorySectionTitleKey =>
+      _isIncome ? "category.income" : "category";
+
+  String get _categoryPickerTitleKey => _isIncome
+      ? "transaction.edit.selectCategory.income"
+      : "transaction.edit.selectCategory";
+
   late final TextEditingController _titleController;
   String? _descriptionMarkdown;
   late double _amount;
@@ -113,6 +123,9 @@ class _TransactionPageState extends State<TransactionPage> {
   DateTime get transactionDate => _transactionDate ?? DateTime.now();
 
   DateTime? _initialTransactionDate;
+
+  /// Auto-applied primary account; not treated as a user edit on cancel.
+  String? _initialAccountUuid;
 
   bool get pastDuePending => widget.isNewTransaction
       ? false
@@ -217,6 +230,8 @@ class _TransactionPageState extends State<TransactionPage> {
       }
     }
 
+    _initialAccountUuid = _selectedAccount?.uuid;
+
     if (widget.isNewTransaction) {
       SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
         _orchestrateFlow(transactionEntryFlow);
@@ -261,7 +276,10 @@ class _TransactionPageState extends State<TransactionPage> {
           child: Scaffold(
             appBar: AppBar(
               leadingWidth: 40.0,
-              leading: FormCloseButton(canPop: () => !hasChanged()),
+              leading: FormCloseButton(
+                canPop: () => !hasChanged(),
+                onClose: pop,
+              ),
               actions: [
                 IconButton(
                   onPressed: () => save(),
@@ -394,7 +412,7 @@ class _TransactionPageState extends State<TransactionPage> {
                       // Category
                       if (!isTransfer)
                         Section(
-                          title: "category".t(context),
+                          title: _categorySectionTitleKey.t(context),
                           child: ListTile(
                             leading: _selectedCategory == null
                                 ? null
@@ -405,7 +423,7 @@ class _TransactionPageState extends State<TransactionPage> {
                                   ),
                             title: Text(
                               _selectedCategory?.name ??
-                                  "transaction.edit.selectCategory".t(context),
+                                  _categoryPickerTitleKey.t(context),
                             ),
                             onTap: () => selectCategory(),
                             trailing: _selectedCategory == null
@@ -560,6 +578,12 @@ class _TransactionPageState extends State<TransactionPage> {
 
     _amount = _amount.abs() * amountSign;
 
+    final bool wantsIncome = type == TransactionType.income;
+    if (_selectedCategory != null &&
+        categoryIsIncome(_selectedCategory!) != wantsIncome) {
+      _selectedCategory = null;
+    }
+
     setState(() {});
   }
 
@@ -713,7 +737,9 @@ class _TransactionPageState extends State<TransactionPage> {
   }
 
   Future<bool> selectCategory([bool fromAutomatedFlow = false]) async {
-    final List<Category> categories = CategoriesProvider.of(context).categories;
+    final List<Category> categories = CategoriesProvider.of(
+      context,
+    ).categoriesFor(_transactionType);
 
     if (fromAutomatedFlow && categories.isEmpty) {
       return true;
@@ -730,6 +756,8 @@ class _TransactionPageState extends State<TransactionPage> {
             ),
             isScrollControlled: true,
           );
+
+      if (!mounted) return false;
 
       if (result != null) {
         setState(() {
@@ -1121,7 +1149,7 @@ class _TransactionPageState extends State<TransactionPage> {
     return _amount != 0 ||
         _titleController.text.isNotEmpty ||
         _descriptionMarkdown?.isNotEmpty == true ||
-        _selectedAccount != null ||
+        _selectedAccount?.uuid != _initialAccountUuid ||
         _selectedAccountTransferTo != null ||
         _isPending ||
         (_selectedTags ?? []).isNotEmpty ||
@@ -1190,7 +1218,17 @@ class _TransactionPageState extends State<TransactionPage> {
 
   void pop() {
     FileAttachmentService().performCleanupCheck();
-    context.pop();
+    if (!mounted) return;
+
+    final NavigatorState navigator = Navigator.of(context);
+    while (mounted &&
+        ModalRoute.of(context)?.isCurrent != true &&
+        navigator.canPop()) {
+      navigator.pop();
+    }
+    if (mounted && context.canPop()) {
+      context.pop();
+    }
   }
 
   String get fallbackTitle {
@@ -1237,6 +1275,7 @@ class _TransactionPageState extends State<TransactionPage> {
 
   void _orchestrateFlow(TransactionEntryFlow flow) async {
     for (final entry in flow.actions) {
+      if (!mounted) return;
       switch (entry) {
         case TransactionEntryAction.selectAccount:
         case TransactionEntryAction.selectPrimaryAccount:

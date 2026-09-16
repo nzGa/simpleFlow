@@ -47,38 +47,29 @@ class TitleInput extends StatelessWidget {
         onSelected: (option) {
           controller.text = option.title;
         },
-        optionsViewBuilder: (context, onSelected, options) => Container(
-          decoration: BoxDecoration(
-            color: context.colorScheme.surface,
-            borderRadius: BorderRadius.only(
+        optionsViewBuilder: (context, onSelected, options) => Material(
+          color: context.colorScheme.surface,
+          elevation: 4.0,
+          clipBehavior: Clip.antiAlias,
+          shape: RoundedRectangleBorder(
+            borderRadius: const BorderRadius.only(
               bottomLeft: Radius.circular(8.0),
               bottomRight: Radius.circular(8.0),
             ),
-            border: BoxBorder.all(color: context.flowColors.semi),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0x05000000),
-                blurRadius: 16.0,
-                offset: const Offset(0, 0),
-              ),
-              BoxShadow(
-                color: const Color(0x10000000),
-                blurRadius: 4.0,
-                offset: const Offset(0, 0),
-              ),
-            ],
+            side: BorderSide(color: context.flowColors.semi),
           ),
-          padding: EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: options
-                .map(
-                  (item) => ListTile(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                for (final item in options)
+                  ListTile(
                     title: Text(item.title),
                     onTap: () => onSelected(item),
                   ),
-                )
-                .toList(),
+              ],
+            ),
           ),
         ),
         fieldViewBuilder:

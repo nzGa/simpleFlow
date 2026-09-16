@@ -15,6 +15,7 @@ import "package:flow/sync/export.dart";
 import "package:flow/sync/import/base.dart";
 import "package:flow/sync/model/csv/parsed_data.dart";
 import "package:flow/sync/model/csv/parsers.dart";
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/utils/extensions/iterables.dart";
 import "package:flow/utils/guess_preset_icon.dart";
 import "package:flutter/material.dart";
@@ -107,6 +108,8 @@ class ImportCSV extends Importer {
                     name,
                     fallback: IconFlowIcon(Symbols.category_rounded),
                   ).toString(),
+                  // Nómina / paycheck names only; expense names stay false.
+                  isIncome: isIncomeCategoryName(name),
                 ),
               )
               .toList(),

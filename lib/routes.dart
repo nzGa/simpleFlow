@@ -178,7 +178,8 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: "/category/new",
-      builder: (context, state) => const CategoryEditPage.create(),
+      builder: (context, state) =>
+          CategoryEditPage.create(isIncome: state.extra == true),
     ),
     GoRoute(
       path: "/category/:id",

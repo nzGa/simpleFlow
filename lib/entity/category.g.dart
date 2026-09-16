@@ -14,6 +14,7 @@ Category _$CategoryFromJson(Map<String, dynamic> json) => Category(
     const UTCDateTimeConverter().fromJson,
   ),
   colorSchemeName: json['colorSchemeName'] as String?,
+  isIncome: json['isIncome'] as bool? ?? false,
 )..uuid = json['uuid'] as String;
 
 Map<String, dynamic> _$CategoryToJson(Category instance) => <String, dynamic>{
@@ -22,6 +23,7 @@ Map<String, dynamic> _$CategoryToJson(Category instance) => <String, dynamic>{
   'name': instance.name,
   'iconCode': instance.iconCode,
   'colorSchemeName': instance.colorSchemeName,
+  'isIncome': instance.isIncome,
 };
 
 Value? _$JsonConverterFromJson<Json, Value>(

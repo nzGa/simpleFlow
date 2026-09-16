@@ -1,5 +1,6 @@
 import "package:flow/data/flow_icon.dart";
 import "package:flow/data/legacy_simple_icons_codepoints.dart";
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/data/transaction_filter.dart";
 import "package:flow/data/transactions_filter/pending_time_range.dart";
 import "package:flow/entity/account.dart";
@@ -390,6 +391,50 @@ Future<void> migrateSimpleIconsToSlug() async {
     } catch (e) {
       _log.warning(
         "Failed to migrate Simple Icons to slugs for migration $migrationUuid",
+        e,
+      );
+    }
+  } catch (e) {
+    _log.warning(
+      "Failed to read migration status for migration $migrationUuid",
+      e,
+    );
+  }
+}
+
+void migrateCategoryIncomeType() async {
+  const String migrationUuid = "a7e3c1d8-4b2f-4e9a-9c6d-1f8e2b5a7043";
+
+  try {
+    final SharedPreferencesWithCache prefs =
+        await SharedPreferencesWithCache.create(
+          cacheOptions: SharedPreferencesWithCacheOptions(),
+        );
+
+    final ok = prefs.getString("flow.migration.$migrationUuid");
+
+    if (ok != null) return;
+
+    try {
+      final List<Category> categories = ObjectBox().box<Category>().getAll();
+      markIncomeCategories(categories);
+      final List<Category> changed = categories
+          .where((category) => category.isIncome)
+          .toList();
+
+      if (changed.isNotEmpty) {
+        await ObjectBox().box<Category>().putManyAsync(changed);
+      }
+
+      await prefs.setString("flow.migration.$migrationUuid", "ok");
+      _log.info(
+        "Marked ${changed.length} paycheck-like categor(ies) as income "
+        "for migration $migrationUuid",
+      );
+    } catch (e) {
+      _log.warning(
+        "Failed to migrate category income type for migration "
+        "$migrationUuid",
         e,
       );
     }

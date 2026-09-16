@@ -4,9 +4,9 @@ Saldo inicial,,Efectivo,68500.00,2026-03-14,09:00:00,,
 Saldo inicial,,Ahorros,1800000.00,2026-03-14,09:00:00,,
 Saldo inicial,,Dólares,2400.00,2026-03-14,09:00:00,,
 Starbucks,,Principal,-8100.00,2026-03-15,11:02:29,,Bebidas
-Freelance USD,Cliente en el exterior,Dólares,437.25,2026-03-15,17:40:00,,Servicios
+Freelance USD,Cliente en el exterior,Dólares,437.25,2026-03-15,17:40:00,,Nómina
 Cuervo café,,Principal,-5800.00,2026-03-16,10:22:04,,Bebidas
-Reintegro OSDE,,Principal,56993.00,2026-03-16,11:05:00,,Salud
+Reintegro OSDE,,Principal,56993.00,2026-03-16,11:05:00,,Nómina
 Axion,,Principal,-43545.00,2026-03-16,14:50:30,,Gasolina
 Kiosco,,Principal,-11392.00,2026-03-16,16:43:39,,Aperitivos
 Personal móvil,,Principal,-28400.00,2026-03-18,09:45:00,,Suministros
@@ -33,7 +33,7 @@ Extracción cajero,,Principal,-80000.00,2026-03-25,12:30:00,,
 Extracción cajero,,Efectivo,80000.00,2026-03-25,12:30:00,,
 Ahorro mensual,,Principal,-350000.00,2026-03-25,12:35:00,,
 Ahorro mensual,,Ahorros,350000.00,2026-03-25,12:35:00,,
-Proyecto puntual,,Principal,224391.00,2026-03-25,16:12:53,,Servicios
+Proyecto puntual,,Principal,224391.00,2026-03-25,16:12:53,,Nómina
 Cabify,,Principal,-9923.00,2026-03-25,16:18:52,,Transporte
 Cabify,,Efectivo,-17203.00,2026-03-26,16:36:30,,Transporte
 Extracción efectivo,,Principal,-40000.00,2026-03-27,12:39:23,,
@@ -45,11 +45,11 @@ Disco,,Principal,-90911.00,2026-03-29,13:44:32,,Compra
 Museo MALBA,,Principal,-6000.00,2026-03-29,19:33:02,,Entretenimiento
 El Club de la Milanesa,,Efectivo,-28984.00,2026-03-29,20:17:21,,Comer fuera
 Café Martínez,,Efectivo,-6200.00,2026-03-30,10:18:27,,Bebidas
-Reintegro PedidosYa,,Principal,61999.00,2026-03-30,12:54:08,,Servicios
+Reintegro PedidosYa,,Principal,61999.00,2026-03-30,12:54:08,,Nómina
 Jumbo,,Principal,-50195.00,2026-03-30,14:52:50,,Compra
 Cuervo café,,Efectivo,-5800.00,2026-03-31,10:55:07,,Bebidas
 SUBE subte,,Efectivo,-1916.00,2026-03-31,20:46:33,,Transporte
-Interés caja de ahorro,,Ahorros,6880.00,2026-03-31,23:50:00,,Servicios
+Interés caja de ahorro,,Ahorros,6880.00,2026-03-31,23:50:00,,Nómina
 Alquiler departamento,"Palermo, CABA",Principal,-850000.00,2026-04-01,08:15:00,,Alquiler
 Smart Fit,,Principal,-55000.00,2026-04-01,08:20:00,,Fitness
 Havanna café,,Principal,-7400.00,2026-04-01,11:18:47,,Bebidas
@@ -67,13 +67,13 @@ Netflix,,Principal,-12999.00,2026-04-05,00:08:40,,Suscripciones online
 Mostaza,,Efectivo,-39120.00,2026-04-05,22:49:07,,Comer fuera
 Ninina,,Efectivo,-9200.00,2026-04-06,09:25:29,,Bebidas
 Fibertel internet,,Principal,-45000.00,2026-04-06,10:00:00,,Suministros
-Venta Mercado Libre,,Principal,40496.00,2026-04-06,16:05:03,,Servicios
+Venta Mercado Libre,,Principal,40496.00,2026-04-06,16:05:03,,Nómina
 Heladería Chungo,,Efectivo,-4629.00,2026-04-06,17:53:05,,Aperitivos
 PedidosYa,,Principal,-46599.00,2026-04-07,19:08:59,,Comer fuera
 Cabify,,Efectivo,-12800.00,2026-04-07,20:18:12,,Transporte
 Colectivo,,Efectivo,-1658.00,2026-04-08,08:25:34,,Transporte
 Siga la Vaca,,Efectivo,-45987.00,2026-04-08,14:38:40,,Comer fuera
-Consultoría,,Principal,406902.00,2026-04-08,16:20:00,,Servicios
+Consultoría,,Principal,406902.00,2026-04-08,16:20:00,,Nómina
 Spotify,,Principal,-7999.00,2026-04-09,00:03:21,,Suscripciones online
 Colectivo,,Principal,-2152.00,2026-04-09,11:38:01,,Transporte
 Ninina,,Principal,-9200.00,2026-04-10,11:22:12,,Bebidas
@@ -96,17 +96,17 @@ Cabify,,Principal,-7435.00,2026-04-14,13:39:47,,Transporte
 Carrefour,,Principal,-66911.00,2026-04-14,15:33:15,,Compra
 Medialunas,,Efectivo,-3741.00,2026-04-14,17:28:24,,Aperitivos
 Cuervo café,,Principal,-5800.00,2026-04-15,10:20:57,,Bebidas
-Freelance USD,Cliente en el exterior,Dólares,327.94,2026-04-15,17:40:00,,Servicios
+Freelance USD,Cliente en el exterior,Dólares,327.94,2026-04-15,17:40:00,,Nómina
 Colectivo,,Principal,-1538.00,2026-04-15,18:10:12,,Transporte
-Reintegro OSDE,,Principal,43237.00,2026-04-16,11:05:00,,Salud
+Reintegro OSDE,,Principal,43237.00,2026-04-16,11:05:00,,Nómina
 Havanna café,,Efectivo,-7400.00,2026-04-17,11:23:21,,Bebidas
 Personal móvil,,Principal,-28400.00,2026-04-18,09:45:00,,Suministros
 Cuervo café,,Principal,-5800.00,2026-04-18,10:07:52,,Bebidas
 Disco,,Principal,-45025.00,2026-04-18,11:08:14,,Compra
 El Club de la Milanesa,,Principal,-34308.00,2026-04-18,18:40:28,,Comer fuera
-Reintegro PedidosYa,,Principal,61111.00,2026-04-19,14:04:58,,Servicios
+Reintegro PedidosYa,,Principal,61111.00,2026-04-19,14:04:58,,Nómina
 Carrefour,,Principal,-97563.00,2026-04-19,15:20:13,,Compra
-Regalo familia,,Efectivo,45000.00,2026-04-19,18:00:00,,Regalos
+Regalo familia,,Efectivo,45000.00,2026-04-19,18:00:00,,Nómina
 Museo MALBA,,Principal,-6000.00,2026-04-19,20:33:39,,Entretenimiento
 Colectivo,,Efectivo,-1828.00,2026-04-19,20:52:22,,Transporte
 Café Martínez,,Efectivo,-6200.00,2026-04-20,11:12:06,,Bebidas
@@ -127,19 +127,19 @@ Extracción cajero,,Principal,-80000.00,2026-04-25,12:30:00,,
 Extracción cajero,,Efectivo,80000.00,2026-04-25,12:30:00,,
 Ahorro mensual,,Principal,-350000.00,2026-04-25,12:35:00,,
 Ahorro mensual,,Ahorros,350000.00,2026-04-25,12:35:00,,
-Proyecto puntual,,Principal,182186.00,2026-04-25,12:39:30,,Servicios
+Proyecto puntual,,Principal,182186.00,2026-04-25,12:39:30,,Nómina
 Ninina,,Efectivo,-9200.00,2026-04-27,11:20:01,,Bebidas
 Recital Niceto,,Principal,-28000.00,2026-04-27,18:04:13,,Entretenimiento
 Cuervo café,,Efectivo,-5800.00,2026-04-28,08:22:27,,Bebidas
 Manicura,,Principal,-13580.00,2026-04-28,11:08:38,,Belleza
 SUBE subte,,Efectivo,-1208.00,2026-04-28,15:39:47,,Transporte
-Reintegro PedidosYa,,Principal,37012.00,2026-04-28,19:30:53,,Servicios
+Reintegro PedidosYa,,Principal,37012.00,2026-04-28,19:30:53,,Nómina
 Siga la Vaca,,Principal,-35342.00,2026-04-28,20:28:39,,Comer fuera
 Burger King,,Efectivo,-34740.00,2026-04-30,14:10:52,,Comer fuera
 Coto,,Principal,-116325.00,2026-04-30,15:47:01,,Compra
 Zara,,Principal,-94860.00,2026-04-30,15:50:23,,Compras
 Panadería,,Efectivo,-3576.00,2026-04-30,16:10:29,,Aperitivos
-Interés caja de ahorro,,Ahorros,8022.02,2026-04-30,23:50:00,,Servicios
+Interés caja de ahorro,,Ahorros,8022.02,2026-04-30,23:50:00,,Nómina
 Alquiler departamento,"Palermo, CABA",Principal,-850000.00,2026-05-01,08:15:00,,Alquiler
 Smart Fit,,Principal,-55000.00,2026-05-01,08:20:00,,Fitness
 Café Martínez,,Efectivo,-6200.00,2026-05-01,11:19:15,,Bebidas
@@ -159,12 +159,12 @@ Fibertel internet,,Principal,-45000.00,2026-05-06,10:00:00,,Suministros
 Havanna café,,Efectivo,-7400.00,2026-05-06,11:08:29,,Bebidas
 Havanna café,,Efectivo,-7400.00,2026-05-07,11:22:18,,Bebidas
 Cabify,,Efectivo,-15712.00,2026-05-07,15:22:29,,Transporte
-Reintegro PedidosYa,,Principal,25935.00,2026-05-07,18:26:00,,Servicios
+Reintegro PedidosYa,,Principal,25935.00,2026-05-07,18:26:00,,Nómina
 Cabify,,Principal,-15337.00,2026-05-08,07:43:02,,Transporte
 Havanna café,,Efectivo,-7400.00,2026-05-08,10:37:28,,Bebidas
 Extracción efectivo,,Principal,-40000.00,2026-05-08,14:14:08,,
 Extracción efectivo,,Efectivo,40000.00,2026-05-08,14:14:08,,
-Freelance diseño,,Principal,404634.00,2026-05-08,16:20:00,,Servicios
+Freelance diseño,,Principal,404634.00,2026-05-08,16:20:00,,Nómina
 Uniqlo,,Principal,-84858.00,2026-05-08,18:56:31,,Compras
 Steam,,Dólares,-14.99,2026-05-08,21:12:00,,Aficiones
 El Club de la Milanesa,,Principal,-18853.00,2026-05-08,22:02:59,,Comer fuera
@@ -185,8 +185,8 @@ Museo MALBA,,Principal,-6000.00,2026-05-13,20:17:31,,Entretenimiento
 BA Taxi,,Efectivo,-11764.00,2026-05-13,20:25:27,,Transporte
 Uber,,Principal,-16269.00,2026-05-14,16:30:37,,Transporte
 Jumbo,,Principal,-44912.00,2026-05-15,13:52:21,,Compra
-Freelance USD,Cliente en el exterior,Dólares,324.25,2026-05-15,17:40:00,,Servicios
-Reintegro OSDE,,Principal,42832.00,2026-05-16,11:05:00,,Salud
+Freelance USD,Cliente en el exterior,Dólares,324.25,2026-05-15,17:40:00,,Nómina
+Reintegro OSDE,,Principal,42832.00,2026-05-16,11:05:00,,Nómina
 El Club de la Milanesa,,Principal,-25404.00,2026-05-17,14:03:05,,Comer fuera
 Carrefour,,Principal,-68459.00,2026-05-17,14:52:12,,Compra
 Ninina,,Principal,-9200.00,2026-05-18,09:27:46,,Bebidas
@@ -223,7 +223,7 @@ Extracción cajero,,Principal,-80000.00,2026-05-25,12:30:00,,
 Extracción cajero,,Efectivo,80000.00,2026-05-25,12:30:00,,
 Ahorro mensual,,Principal,-350000.00,2026-05-25,12:35:00,,
 Ahorro mensual,,Ahorros,350000.00,2026-05-25,12:35:00,,
-Proyecto puntual,,Principal,294920.00,2026-05-25,14:23:13,,Servicios
+Proyecto puntual,,Principal,294920.00,2026-05-25,14:23:13,,Nómina
 Café Martínez,,Principal,-6200.00,2026-05-26,11:04:11,,Bebidas
 Axion,,Principal,-42136.00,2026-05-26,14:30:06,,Gasolina
 Starbucks,,Efectivo,-8100.00,2026-05-27,10:21:46,,Bebidas
@@ -239,7 +239,7 @@ Siga la Vaca,,Principal,-27135.00,2026-05-30,18:31:08,,Comer fuera
 Ninina,,Principal,-9200.00,2026-05-31,08:03:13,,Bebidas
 PedidosYa,,Principal,-32665.00,2026-05-31,15:52:31,,Comer fuera
 Partido River,,Principal,-42000.00,2026-05-31,18:13:32,,Entretenimiento
-Interés caja de ahorro,,Ahorros,9167.69,2026-05-31,23:50:00,,Servicios
+Interés caja de ahorro,,Ahorros,9167.69,2026-05-31,23:50:00,,Nómina
 Alquiler departamento,"Palermo, CABA",Principal,-850000.00,2026-06-01,08:15:00,,Alquiler
 Smart Fit,,Principal,-55000.00,2026-06-01,08:20:00,,Fitness
 Starbucks,,Principal,-8100.00,2026-06-01,09:37:54,,Bebidas
@@ -267,8 +267,8 @@ Fibertel internet,,Principal,-45000.00,2026-06-06,10:00:00,,Suministros
 Don Julio (barra),,Efectivo,-27384.00,2026-06-06,19:36:05,,Comer fuera
 Guitar Center strings,,Principal,-30203.00,2026-06-06,20:42:29,,Aficiones
 Corte de pelo,,Principal,-16877.00,2026-06-08,13:45:35,,Belleza
-Freelance diseño,,Principal,318123.00,2026-06-08,16:20:00,,Servicios
-Venta Mercado Libre,,Principal,59680.00,2026-06-08,19:06:20,,Servicios
+Freelance diseño,,Principal,318123.00,2026-06-08,16:20:00,,Nómina
+Venta Mercado Libre,,Principal,59680.00,2026-06-08,19:06:20,,Nómina
 Colectivo,,Efectivo,-1516.00,2026-06-08,22:11:57,,Transporte
 Spotify,,Principal,-7999.00,2026-06-09,00:03:21,,Suscripciones online
 Ninina,,Efectivo,-9200.00,2026-06-09,08:08:24,,Bebidas
@@ -286,10 +286,10 @@ Corte de pelo,,Principal,-22538.00,2026-06-13,17:00:00,,Belleza
 Ninina,,Principal,-9200.00,2026-06-15,08:49:53,,Bebidas
 Jumbo,,Principal,-92140.00,2026-06-15,11:48:58,,Compra
 Colectivo,,Principal,-1203.00,2026-06-15,16:06:59,,Transporte
-Freelance USD,Cliente en el exterior,Dólares,344.06,2026-06-15,17:40:00,,Servicios
+Freelance USD,Cliente en el exterior,Dólares,344.06,2026-06-15,17:40:00,,Nómina
 Medialunas,,Efectivo,-4879.00,2026-06-15,17:49:43,,Aperitivos
 Starbucks,,Principal,-8100.00,2026-06-16,09:12:31,,Bebidas
-Reintegro OSDE,,Principal,61804.00,2026-06-16,11:05:00,,Salud
+Reintegro OSDE,,Principal,61804.00,2026-06-16,11:05:00,,Nómina
 Siga la Vaca,,Principal,-53366.00,2026-06-16,21:49:51,,Comer fuera
 Panadería,,Efectivo,-4623.00,2026-06-17,17:09:35,,Aperitivos
 Don Julio (barra),,Efectivo,-22404.00,2026-06-17,18:28:59,,Comer fuera
@@ -299,7 +299,7 @@ Personal móvil,,Principal,-28400.00,2026-06-18,09:45:00,,Suministros
 Havanna café,,Principal,-7400.00,2026-06-18,10:18:54,,Bebidas
 Carrefour,,Principal,-114881.00,2026-06-18,11:34:59,,Compra
 Siga la Vaca,,Principal,-17131.00,2026-06-18,13:35:00,,Comer fuera
-Reintegro PedidosYa,,Principal,47512.00,2026-06-18,15:14:45,,Servicios
+Reintegro PedidosYa,,Principal,47512.00,2026-06-18,15:14:45,,Nómina
 Colectivo,,Efectivo,-1518.00,2026-06-19,16:06:24,,Transporte
 PedidosYa,,Principal,-26995.00,2026-06-19,21:20:11,,Comer fuera
 Starbucks,,Efectivo,-8100.00,2026-06-20,08:20:32,,Bebidas
@@ -312,7 +312,7 @@ Día,,Principal,-88127.00,2026-06-22,12:56:22,,Compra
 AySA agua,,Principal,-18500.00,2026-06-22,13:00:00,,Suministros
 BA Taxi,,Efectivo,-13498.00,2026-06-23,19:49:45,,Transporte
 Ninina,,Principal,-9200.00,2026-06-24,09:23:05,,Bebidas
-Reintegro PedidosYa,,Principal,64925.00,2026-06-24,19:07:23,,Servicios
+Reintegro PedidosYa,,Principal,64925.00,2026-06-24,19:07:23,,Nómina
 Falabella,,Principal,-27879.00,2026-06-24,20:38:26,,Compras
 SUBE subte,,Principal,-1494.00,2026-06-25,08:19:54,,Transporte
 Sueldo,,Principal,3211982.50,2026-06-25,09:15:00,,Nómina
@@ -321,7 +321,7 @@ Extracción cajero,,Principal,-80000.00,2026-06-25,12:30:00,,
 Extracción cajero,,Efectivo,80000.00,2026-06-25,12:30:00,,
 Ahorro mensual,,Principal,-350000.00,2026-06-25,12:35:00,,
 Ahorro mensual,,Ahorros,350000.00,2026-06-25,12:35:00,,
-Hora extra,,Principal,304837.00,2026-06-25,13:00:13,,Servicios
+Hora extra,,Principal,304837.00,2026-06-25,13:00:13,,Nómina
 Cuervo café,,Principal,-5800.00,2026-06-26,10:13:56,,Bebidas
 Carrefour,,Principal,-89034.00,2026-06-26,11:33:34,,Compra
 Jumbo,,Principal,-56472.00,2026-06-27,11:18:34,,Compra
@@ -334,7 +334,7 @@ Pet shop,,Principal,-44835.00,2026-06-29,17:16:39,,Cuidado de mascotas
 Café Martínez,,Efectivo,-6200.00,2026-06-30,08:07:03,,Bebidas
 Aguinaldo (1er semestre),,Principal,1600000.00,2026-06-30,09:10:00,,Nómina
 Easy,,Principal,-61070.00,2026-06-30,17:44:30,,Compras
-Interés caja de ahorro,,Ahorros,10317.02,2026-06-30,23:50:00,,Servicios
+Interés caja de ahorro,,Ahorros,10317.02,2026-06-30,23:50:00,,Nómina
 Alquiler departamento,"Palermo, CABA",Principal,-850000.00,2026-07-01,08:15:00,,Alquiler
 Smart Fit,,Principal,-55000.00,2026-07-01,08:20:00,,Fitness
 Cuervo café,,Principal,-5800.00,2026-07-01,09:06:22,,Bebidas
@@ -365,7 +365,7 @@ BA Taxi,,Efectivo,-9700.00,2026-07-07,14:30:07,,Transporte
 Rappi,,Principal,-44658.00,2026-07-07,22:02:52,,Comer fuera
 Colectivo,,Efectivo,-2317.00,2026-07-08,11:28:18,,Transporte
 Starbucks,,Efectivo,-8100.00,2026-07-08,11:55:32,,Bebidas
-Proyecto puntual,,Principal,387330.00,2026-07-08,16:20:00,,Servicios
+Proyecto puntual,,Principal,387330.00,2026-07-08,16:20:00,,Nómina
 Spotify,,Principal,-7999.00,2026-07-09,00:03:21,,Suscripciones online
 Cuervo café,,Principal,-5800.00,2026-07-09,08:49:14,,Bebidas
 Jumbo,,Principal,-66614.00,2026-07-09,12:21:35,,Compra
@@ -390,9 +390,9 @@ Seguro del auto,,Principal,-86000.00,2026-07-14,10:00:00,,Seguros
 Uber,,Principal,-11841.00,2026-07-14,22:32:37,,Transporte
 BA Taxi,,Efectivo,-17093.00,2026-07-15,08:39:48,,Transporte
 Café Martínez,,Principal,-6200.00,2026-07-15,10:56:05,,Bebidas
-Freelance USD,Cliente en el exterior,Dólares,319.08,2026-07-15,17:40:00,,Servicios
+Freelance USD,Cliente en el exterior,Dólares,319.08,2026-07-15,17:40:00,,Nómina
 Starbucks,,Principal,-8100.00,2026-07-16,08:36:42,,Bebidas
-Reintegro OSDE,,Principal,15476.00,2026-07-16,11:05:00,,Salud
+Reintegro OSDE,,Principal,15476.00,2026-07-16,11:05:00,,Nómina
 Coto,,Principal,-106721.00,2026-07-16,16:58:32,,Compra
 Havanna café,,Efectivo,-7400.00,2026-07-17,09:16:31,,Bebidas
 Extracción efectivo,,Principal,-40000.00,2026-07-17,13:10:09,,
@@ -432,7 +432,7 @@ Extracción cajero,,Principal,-80000.00,2026-07-25,12:30:00,,
 Extracción cajero,,Efectivo,80000.00,2026-07-25,12:30:00,,
 Ahorro mensual,,Principal,-350000.00,2026-07-25,12:35:00,,
 Ahorro mensual,,Ahorros,350000.00,2026-07-25,12:35:00,,
-Hora extra,,Principal,368921.00,2026-07-25,14:32:01,,Servicios
+Hora extra,,Principal,368921.00,2026-07-25,14:32:01,,Nómina
 Cinemark,,Principal,-14500.00,2026-07-25,17:40:14,,Entretenimiento
 El Club de la Milanesa,,Efectivo,-50936.00,2026-07-25,21:49:28,,Comer fuera
 Coto,,Principal,-54145.00,2026-07-26,13:34:11,,Compra
@@ -446,7 +446,7 @@ YPF,,Principal,-57609.00,2026-07-30,10:38:54,,Gasolina
 Medialunas,,Efectivo,-10669.00,2026-07-30,16:38:51,,Aperitivos
 Havanna café,,Principal,-7400.00,2026-07-31,08:59:22,,Bebidas
 Steam oferta,,Principal,-8999.00,2026-07-31,15:48:38,,Entretenimiento
-Interés caja de ahorro,,Ahorros,11470.04,2026-07-31,23:50:00,,Servicios
+Interés caja de ahorro,,Ahorros,11470.04,2026-07-31,23:50:00,,Nómina
 Alquiler departamento,"Palermo, CABA",Principal,-850000.00,2026-08-01,08:15:00,,Alquiler
 Smart Fit,,Principal,-55000.00,2026-08-01,08:20:00,,Fitness
 Cuervo café,,Efectivo,-5800.00,2026-08-01,10:09:58,,Bebidas
@@ -473,8 +473,8 @@ Café Martínez,,Principal,-6200.00,2026-08-07,08:48:53,,Bebidas
 PedidosYa,,Principal,-22389.00,2026-08-07,14:26:28,,Comer fuera
 Coto,,Principal,-71571.00,2026-08-08,12:57:14,,Compra
 Guitar Center strings,,Principal,-18119.00,2026-08-08,15:03:58,,Aficiones
-Cashback tarjeta,,Principal,79837.00,2026-08-08,15:34:53,,Servicios
-Consultoría,,Principal,458790.00,2026-08-08,16:20:00,,Servicios
+Cashback tarjeta,,Principal,79837.00,2026-08-08,15:34:53,,Nómina
+Consultoría,,Principal,458790.00,2026-08-08,16:20:00,,Nómina
 Regalo papá,Día del Padre,Principal,-38500.00,2026-08-08,17:56:56,,Regalos
 Burger King,,Principal,-37296.00,2026-08-08,21:23:48,,Comer fuera
 Spotify,,Principal,-7999.00,2026-08-09,00:03:21,,Suscripciones online
@@ -484,7 +484,7 @@ Axion,,Principal,-51138.00,2026-08-10,10:57:09,,Gasolina
 Donación mensual,Cruz Roja Argentina,Principal,-8000.00,2026-08-10,11:30:00,,Donaciones
 Colectivo,,Principal,-1630.00,2026-08-10,19:56:32,,Transporte
 Cuervo café,,Principal,-5800.00,2026-08-11,09:48:26,,Bebidas
-Cashback tarjeta,,Principal,56276.00,2026-08-11,13:22:28,,Servicios
+Cashback tarjeta,,Principal,56276.00,2026-08-11,13:22:28,,Nómina
 Monotributo,,Principal,-52000.00,2026-08-11,16:00:00,,Impuestos
 Lego,,Principal,-12817.00,2026-08-11,20:41:28,,Aficiones
 ChatGPT Plus,,Principal,-24900.00,2026-08-12,00:12:00,,Suscripciones online
@@ -492,18 +492,18 @@ Starbucks,,Principal,-8100.00,2026-08-12,11:22:43,,Bebidas
 Museo MALBA,,Principal,-6000.00,2026-08-12,20:02:33,,Entretenimiento
 Axion,,Principal,-53725.00,2026-08-13,13:48:38,,Gasolina
 SUBE subte,,Efectivo,-1743.00,2026-08-13,14:38:27,,Transporte
-Reintegro PedidosYa,,Principal,24644.00,2026-08-13,16:46:03,,Servicios
+Reintegro PedidosYa,,Principal,24644.00,2026-08-13,16:46:03,,Nómina
 Café Martínez,,Principal,-6200.00,2026-08-14,11:15:47,,Bebidas
-Freelance USD,Cliente en el exterior,Dólares,313.99,2026-08-15,17:40:00,,Servicios
+Freelance USD,Cliente en el exterior,Dólares,313.99,2026-08-15,17:40:00,,Nómina
 YPF,,Principal,-48606.00,2026-08-15,18:41:51,,Gasolina
 Partido River,,Principal,-42000.00,2026-08-15,21:57:30,,Entretenimiento
-Reintegro OSDE,,Principal,20749.00,2026-08-16,11:05:00,,Salud
+Reintegro OSDE,,Principal,20749.00,2026-08-16,11:05:00,,Nómina
 Disco,,Principal,-61315.00,2026-08-16,11:50:14,,Compra
 Supermercado limpieza,,Principal,-15377.00,2026-08-16,12:05:19,,Higiene
 Alimento Royal Canin,,Principal,-37881.00,2026-08-16,16:30:30,,Cuidado de mascotas
 Havanna café,,Principal,-7400.00,2026-08-17,08:29:25,,Bebidas
 Cabify,,Principal,-7800.00,2026-08-17,10:37:09,,Transporte
-Venta Mercado Libre,,Principal,73347.00,2026-08-17,20:14:59,,Servicios
+Venta Mercado Libre,,Principal,73347.00,2026-08-17,20:14:59,,Nómina
 Havanna café,,Principal,-7400.00,2026-08-18,09:21:26,,Bebidas
 Personal móvil,,Principal,-28400.00,2026-08-18,09:45:00,,Suministros
 Heladería Chungo,,Principal,-8459.00,2026-08-18,16:12:18,,Aperitivos
@@ -525,7 +525,7 @@ Extracción cajero,,Efectivo,80000.00,2026-08-25,12:30:00,,
 BA Taxi,,Principal,-10304.00,2026-08-25,12:30:11,,Transporte
 Ahorro mensual,,Principal,-350000.00,2026-08-25,12:35:00,,
 Ahorro mensual,,Ahorros,350000.00,2026-08-25,12:35:00,,
-Proyecto puntual,,Principal,247057.00,2026-08-25,16:40:43,,Servicios
+Proyecto puntual,,Principal,247057.00,2026-08-25,16:40:43,,Nómina
 Cuervo café,,Efectivo,-5800.00,2026-08-26,11:13:21,,Bebidas
 Burger King,,Efectivo,-22798.00,2026-08-26,19:57:01,,Comer fuera
 Cabify,,Efectivo,-16561.00,2026-08-26,21:34:26,,Transporte
@@ -539,7 +539,7 @@ Rappi,,Principal,-42572.00,2026-08-30,14:20:58,,Comer fuera
 Libros Gandhi,,Principal,-43725.00,2026-08-30,21:09:06,,Aficiones
 Supermercado limpieza,,Principal,-18141.00,2026-08-31,12:31:18,,Higiene
 YPF,,Principal,-51872.00,2026-08-31,15:53:51,,Gasolina
-Interés caja de ahorro,,Ahorros,12626.74,2026-08-31,23:50:00,,Servicios
+Interés caja de ahorro,,Ahorros,12626.74,2026-08-31,23:50:00,,Nómina
 Alquiler departamento,"Palermo, CABA",Principal,-850000.00,2026-09-01,08:15:00,,Alquiler
 Smart Fit,,Principal,-55000.00,2026-09-01,08:20:00,,Fitness
 Havanna café,,Principal,-7400.00,2026-09-01,10:09:42,,Bebidas
@@ -564,7 +564,7 @@ Farmacia dermocosmética,,Principal,-28850.00,2026-09-07,15:48:42,,Belleza
 Recital Niceto,,Principal,-28000.00,2026-09-07,16:07:00,,Entretenimiento
 BA Taxi,,Efectivo,-12486.00,2026-09-07,21:04:57,,Transporte
 Ninina,,Principal,-9200.00,2026-09-08,08:12:20,,Bebidas
-Freelance diseño,,Principal,268532.00,2026-09-08,16:20:00,,Servicios
+Freelance diseño,,Principal,268532.00,2026-09-08,16:20:00,,Nómina
 Cabify,,Principal,-13852.00,2026-09-08,20:55:15,,Transporte
 Spotify,,Principal,-7999.00,2026-09-09,00:03:21,,Suscripciones online
 Donación mensual,Cruz Roja Argentina,Principal,-8000.00,2026-09-10,11:30:00,,Donaciones

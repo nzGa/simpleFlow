@@ -3,6 +3,137 @@ import "package:flow/entity/category.dart";
 import "package:flow/l10n/extensions.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 
+/// Preset UUID for paychecks / Nómina.
+const String paycheckCategoryUuid = "8bec1ea1-726f-4228-9d14-d210e86a9586";
+
+/// Preset UUID for taxes / Impuestos.
+const String taxesCategoryUuid = "4213e196-8974-41d4-8eb9-b4debf3118aa";
+
+/// Historical paycheck / salary names across locales and CSV samples.
+const Set<String> incomeCategoryNameHints = {
+  "nómina",
+  "nomina",
+  "paycheck",
+  "paychecks",
+  "salary",
+  "salaire",
+  "gehalt",
+  "stipendio",
+  "зарплата",
+  "maaş",
+  "wynagrodzenie",
+  "цалин",
+  "výplata",
+  "薪資",
+  "薪资",
+  "حقوق",
+  "الراتب",
+};
+
+/// Whether [name] looks like the built-in paycheck / salary category.
+bool isIncomeCategoryName(String name) {
+  final String normalized = name.trim().toLowerCase();
+  if (normalized.isEmpty) return false;
+  if (incomeCategoryNameHints.contains(normalized)) return true;
+
+  try {
+    final String localized = "setup.categories.preset.paychecks"
+        .tr()
+        .trim()
+        .toLowerCase();
+    if (localized.isNotEmpty && localized == normalized) return true;
+  } catch (_) {}
+
+  return false;
+}
+
+/// Historical tax / withholding names across locales.
+const Set<String> taxCategoryNameHints = {
+  "impuestos",
+  "impuesto",
+  "taxes",
+  "tax",
+  "steuern",
+  "steuer",
+  "tasse",
+  "impôts",
+  "impots",
+  "vergi",
+  "podatki",
+  "налоги",
+  "податки",
+  "падаткі",
+  "daně",
+  "dane",
+  "税金",
+  "稅金",
+  "الضرائب",
+  "مالیات",
+  "татвар",
+};
+
+/// Whether [name] looks like the built-in taxes category.
+bool isTaxCategoryName(String name) {
+  final String normalized = name.trim().toLowerCase();
+  if (normalized.isEmpty) return false;
+  if (taxCategoryNameHints.contains(normalized)) return true;
+
+  try {
+    final String localized = "setup.categories.preset.taxes"
+        .tr()
+        .trim()
+        .toLowerCase();
+    if (localized.isNotEmpty && localized == normalized) return true;
+  } catch (_) {}
+
+  return false;
+}
+
+/// Persisted flag, plus paycheck UUID/name fallback for unmigrated rows.
+bool categoryIsIncome(Category category) =>
+    category.isIncome ||
+    category.uuid == paycheckCategoryUuid ||
+    isIncomeCategoryName(category.name);
+
+/// Preset UUID or a tax-like name. [category] may be null (uncategorized).
+bool categoryIsTax(Category? category) =>
+    category != null &&
+    (category.uuid == taxesCategoryUuid || isTaxCategoryName(category.name));
+
+/// Marks paycheck-like categories as income. Skips those already flagged.
+void markIncomeCategories(Iterable<Category> categories) {
+  for (final Category category in categories) {
+    if (category.isIncome) continue;
+    if (category.uuid == paycheckCategoryUuid ||
+        isIncomeCategoryName(category.name)) {
+      category.isIncome = true;
+    }
+  }
+}
+
+/// Moves the paycheck category to the front of [categories].
+///
+/// Matches the preset UUID or [localizedPaycheckName] so CSV-imported
+/// "Nómina" rows (new UUIDs) still surface first on income.
+List<Category> pinPaycheckCategory(
+  List<Category> categories, {
+  String? localizedPaycheckName,
+}) {
+  final int index = categories.indexWhere(
+    (category) =>
+        category.uuid == paycheckCategoryUuid ||
+        (localizedPaycheckName != null &&
+            category.name == localizedPaycheckName),
+  );
+  if (index <= 0) return categories;
+
+  final Category paycheck = categories[index];
+  return [
+    paycheck,
+    ...categories.where((category) => !identical(category, paycheck)),
+  ];
+}
+
 List<Category> getCategoryPresets() {
   return [
     Category.preset(
@@ -79,14 +210,15 @@ List<Category> getCategoryPresets() {
       iconCode: const IconFlowIcon(Symbols.valve_rounded).toString(),
     ),
     Category.preset(
-      uuid: "4213e196-8974-41d4-8eb9-b4debf3118aa",
+      uuid: taxesCategoryUuid,
       name: "setup.categories.preset.taxes".tr(),
       iconCode: const IconFlowIcon(Symbols.account_balance_rounded).toString(),
     ),
     Category.preset(
-      uuid: "8bec1ea1-726f-4228-9d14-d210e86a9586",
+      uuid: paycheckCategoryUuid,
       name: "setup.categories.preset.paychecks".tr(),
       iconCode: const IconFlowIcon(Symbols.wallet_rounded).toString(),
+      isIncome: true,
     ),
     Category.preset(
       uuid: "b2d86c68-ed70-46a1-b51c-40077324b99e",

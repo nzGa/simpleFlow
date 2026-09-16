@@ -78,7 +78,7 @@
     },
     {
       "id": "2:649350347514211469",
-      "lastPropertyId": "10:8207473128907508304",
+      "lastPropertyId": "11:2328304180011648156",
       "name": "Category",
       "properties": [
         {
@@ -115,6 +115,11 @@
           "id": "10:8207473128907508304",
           "name": "colorSchemeName",
           "type": 9
+        },
+        {
+          "id": "11:2328304180011648156",
+          "name": "isIncome",
+          "type": 1
         }
       ],
       "relations": []

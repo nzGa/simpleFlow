@@ -1,6 +1,7 @@
 import "dart:async";
 
 import "package:flow/data/prefs/frecency_group.dart";
+import "package:flow/data/setup/default_categories.dart";
 import "package:flow/entity/category.dart";
 import "package:flow/entity/transaction/type.dart";
 import "package:flow/objectbox.dart";
@@ -55,23 +56,32 @@ class CategoriesProvider extends InheritedWidget {
 
   bool get ready => _categories != null;
 
-  /// Categories sorted by combined (income + expense) frecency. Use
-  /// [categoriesFor] when the transaction's type is known to get a list
-  /// ordered by usage within that type only.
+  /// All categories sorted by combined (income + expense) frecency.
+  /// Use [categoriesFor] when assigning a category to a transaction.
   List<Category> get categories => categoriesFor(null);
 
-  /// Returns categories sorted by frecency restricted to [type]. Pass null
-  /// when the type is unknown or mixed (bulk edits, transfers) — it falls
-  /// back to combined ranking.
+  /// Categories matching [type], sorted by frecency for that type.
+  ///
+  /// Income transactions only see [Category.isIncome] categories (Nómina
+  /// and user-created income cats). Expenses hide those. Pass null for
+  /// mixed/unknown (bulk edits) to list every category.
   List<Category> categoriesFor(TransactionType? type) {
     final List<Category> list = _categories ?? const [];
     if (list.isEmpty) return list;
+
+    final List<Category> filtered = switch (type) {
+      TransactionType.income => list.where(categoryIsIncome).toList(),
+      TransactionType.expense =>
+        list.where((category) => !categoryIsIncome(category)).toList(),
+      _ => list,
+    };
+    if (filtered.isEmpty) return filtered;
 
     final List<String> frecencyKeys =
         TransitiveLocalPreferences.categoryFrecencyTypesFor(type);
 
     final FrecencyGroup frecencyGroup = FrecencyGroup(
-      list
+      filtered
           .expand(
             (category) => frecencyKeys.map(
               (key) => TransitiveLocalPreferences().getFrecencyData(
@@ -84,7 +94,7 @@ class CategoriesProvider extends InheritedWidget {
           .toList(),
     );
 
-    return [...list]..sort(
+    return [...filtered]..sort(
       (a, b) => frecencyGroup
           .getScore(b.uuid)
           .compareTo(frecencyGroup.getScore(a.uuid)),
