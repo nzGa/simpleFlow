@@ -10,7 +10,7 @@ bool get flowDebugMode => kDebugMode || debugBuild;
 
 final Uri website = Uri.parse("https://flow.gege.mn");
 final Uri guideUrl = Uri.parse("https://flow.gege.mn/docs");
-final Uri flowGitHubRepoLink = Uri.parse("https://github.com/nzGa/simpleFlow");
+final Uri flowGitHubRepoLink = Uri.parse("https://github.com/nzGa/spendly");
 
 const double sukhbaatarSquareCenterLat = 47.918828;
 const double sukhbaatarSquareCenterLong = 106.917604;
