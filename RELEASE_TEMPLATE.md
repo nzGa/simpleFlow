@@ -11,11 +11,4 @@ data loss under any circumstances!
 
 ## Download
 
-* [Google Play](https://play.google.com/store/apps/details?id=mn.flow.flow?utm_source=gh-release-{{version}}) for Android
-* [App Store](https://apps.apple.com/mn/app/flow-expense-tracker/id6477741670?utm_source=gh-release-{{version}}) for iOS
-
-Also:
-
-* Download Fat APK build from [GitHub release](https://github.com/flow-mn/flow/releases/latest)
-
-Updates may take some time to appear on app stores after GitHub release
+* [GitHub release](https://github.com/nzGa/spendly/releases/tag/{{version}})
