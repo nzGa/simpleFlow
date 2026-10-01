@@ -1,5 +1,5 @@
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/money.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/money.dart";
 
 extension MoneyConversion on Money {
   /// Converts this amount into [targetCurrency], returning `null` when the

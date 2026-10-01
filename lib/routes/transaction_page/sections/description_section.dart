@@ -1,6 +1,6 @@
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/routes/transaction_page/section.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/routes/transaction_page/section.dart";
 import "package:flutter/material.dart";
 
 class DescriptionSection extends StatelessWidget {

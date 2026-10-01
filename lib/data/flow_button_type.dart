@@ -1,5 +1,5 @@
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/theme/helpers.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/theme/helpers.dart";
 import "package:flutter/material.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

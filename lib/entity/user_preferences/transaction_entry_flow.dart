@@ -1,6 +1,6 @@
 import "dart:convert";
 
-import "package:flow/l10n/named_enum.dart";
+import "package:spendly/l10n/named_enum.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "transaction_entry_flow.g.dart";

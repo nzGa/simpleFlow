@@ -1,6 +1,6 @@
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/widgets/general/directional_chevron.dart";
-import "package:flow/widgets/general/modal_sheet.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/widgets/general/directional_chevron.dart";
+import "package:spendly/widgets/general/modal_sheet.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:json_annotation/json_annotation.dart";

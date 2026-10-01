@@ -1,5 +1,5 @@
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/objectbox.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/objectbox.dart";
 
 class TransactionTagService {
   static TransactionTagService? _instance;

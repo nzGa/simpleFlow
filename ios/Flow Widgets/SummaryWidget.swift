@@ -18,7 +18,7 @@ struct SummaryProvider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SummaryWidgetEntry) -> ()) {
-        let prefs = UserDefaults(suiteName: "group.mn.flow.flow")
+        let prefs = UserDefaults(suiteName: "group.com.nzga.spendly")
         let income = prefs?.string(forKey: "summaryIncome") ?? "---"
         let expense = prefs?.string(forKey: "summaryExpense") ?? "---"
         let incomeLabel = prefs?.string(forKey: "summaryIncomeLabel") ?? "Income"

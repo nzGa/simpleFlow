@@ -1,4 +1,4 @@
-import "package:flow/logging.dart";
+import "package:spendly/logging.dart";
 import "package:flutter/material.dart";
 import "package:pie_menu/pie_menu.dart";
 

@@ -1,13 +1,13 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/main.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/color_themes/registry.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/flow_theme_group.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/optional.dart";
-import "package:flow/widgets/general/directional_chevron.dart";
-import "package:flow/widgets/sheets/select_color_scheme_sheet.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/main.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/color_themes/registry.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/flow_theme_group.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/optional.dart";
+import "package:spendly/widgets/general/directional_chevron.dart";
+import "package:spendly/widgets/sheets/select_color_scheme_sheet.dart";
 import "package:flutter/material.dart" hide Flow;
 import "package:material_symbols_icons_flow/symbols.dart";
 

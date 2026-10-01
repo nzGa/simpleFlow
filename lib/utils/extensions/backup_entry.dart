@@ -1,6 +1,6 @@
-import "package:flow/entity/backup_entry.dart";
-import "package:flow/services/sync/icloud_syncer.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/entity/backup_entry.dart";
+import "package:spendly/services/sync/icloud_syncer.dart";
+import "package:spendly/utils/utils.dart";
 import "package:icloud_storage/icloud_storage.dart";
 
 extension BackupEntryExtension on BackupEntry {

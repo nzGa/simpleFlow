@@ -1,8 +1,8 @@
 import "dart:ui";
 
-import "package:flow/data/flow_icon.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/flow_theme_group.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/flow_theme_group.dart";
 
 final FlowColorScheme _catppuccinMacchiatoBase = FlowColorScheme(
   name: "catppuccinMacchiatoBase",

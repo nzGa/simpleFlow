@@ -1,8 +1,8 @@
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/utils/optional.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/utils/optional.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "search_data.g.dart";

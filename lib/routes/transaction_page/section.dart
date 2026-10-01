@@ -1,5 +1,5 @@
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/frame.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/frame.dart";
 import "package:flutter/material.dart";
 
 class Section extends StatelessWidget {

@@ -1,4 +1,4 @@
-import "package:flow/utils/replace_everything_except.dart";
+import "package:spendly/utils/replace_everything_except.dart";
 import "package:intl/intl.dart";
 
 double? parseLocaleMoneyString({

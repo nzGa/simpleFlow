@@ -1,7 +1,7 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/flow_icon.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

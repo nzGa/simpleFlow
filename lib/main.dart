@@ -20,35 +20,35 @@ import "dart:async";
 import "dart:io";
 import "dart:ui";
 
-import "package:flow/constants.dart";
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/profile.dart";
-import "package:flow/graceful_migrations.dart";
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/logging.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/providers/accounts_provider.dart";
-import "package:flow/providers/categories_provider.dart";
-import "package:flow/providers/transaction_tags_provider.dart";
-import "package:flow/routes.dart";
-import "package:flow/services/currency_registry.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/services/integrations/siri_pending.dart";
-import "package:flow/services/local_auth.dart";
-import "package:flow/services/navigation.dart";
-import "package:flow/services/notifications.dart";
-import "package:flow/services/recurring_transactions.dart";
-import "package:flow/services/sync.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/services/home_widgets.dart";
-import "package:flow/theme/color_themes/registry.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/flow_themes.dart";
-import "package:flow/widgets/general/flow_icon.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/profile.dart";
+import "package:spendly/graceful_migrations.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/logging.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/providers/accounts_provider.dart";
+import "package:spendly/providers/categories_provider.dart";
+import "package:spendly/providers/transaction_tags_provider.dart";
+import "package:spendly/routes.dart";
+import "package:spendly/services/currency_registry.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/services/integrations/siri_pending.dart";
+import "package:spendly/services/local_auth.dart";
+import "package:spendly/services/navigation.dart";
+import "package:spendly/services/notifications.dart";
+import "package:spendly/services/recurring_transactions.dart";
+import "package:spendly/services/sync.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/services/home_widgets.dart";
+import "package:spendly/theme/color_themes/registry.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/flow_themes.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
 import "package:flutter/material.dart";
 import "package:flutter/scheduler.dart";
 import "package:flutter/services.dart";
@@ -427,20 +427,23 @@ class FlowState extends State<Flow> {
       return;
     }
 
-    if (validateThemeName(themeName)) {
-      themeLogger.info("Reloading $themeName");
+    if (themeName == null) return;
 
-      FlowColorScheme theme = getTheme(themeName, preferDark: useDarkTheme);
-
-      setState(() {
-        _themeMode = theme.mode;
-        _themeFactory = ThemeFactory(theme);
-      });
-    } else {
+    if (!validateThemeName(themeName)) {
       themeLogger.warning(
-        "Invalid theme name: $themeName, falling back to null",
+        "Invalid theme name: $themeName, keeping the default theme",
       );
+      return;
     }
+
+    themeLogger.info("Reloading $themeName");
+
+    FlowColorScheme theme = getTheme(themeName, preferDark: useDarkTheme);
+
+    setState(() {
+      _themeMode = theme.mode;
+      _themeFactory = ThemeFactory(theme);
+    });
   }
 
   void _reloadLocale() {

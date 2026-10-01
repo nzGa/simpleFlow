@@ -1,9 +1,9 @@
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/services/sync/syncer.dart";
-import "package:flow/utils/extensions.dart";
-import "package:flow/widgets/general/directional_chevron.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/modal_sheet.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/services/sync/syncer.dart";
+import "package:spendly/utils/extensions.dart";
+import "package:spendly/widgets/general/directional_chevron.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/modal_sheet.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:moment_dart/moment_dart.dart";

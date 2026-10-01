@@ -1,7 +1,7 @@
-import "package:flow/entity/profile.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/profile_picture.dart";
+import "package:spendly/entity/profile.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/profile_picture.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:objectbox/objectbox.dart";

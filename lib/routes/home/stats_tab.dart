@@ -1,6 +1,6 @@
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/home/stats/bento/analytics_bento.dart";
-import "package:flow/widgets/time_range_selector.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/home/stats/bento/analytics_bento.dart";
+import "package:spendly/widgets/time_range_selector.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 

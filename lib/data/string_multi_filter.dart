@@ -1,4 +1,4 @@
-import "package:flow/data/multi_filter.dart";
+import "package:spendly/data/multi_filter.dart";
 import "package:flutter/foundation.dart";
 import "package:json_annotation/json_annotation.dart";
 

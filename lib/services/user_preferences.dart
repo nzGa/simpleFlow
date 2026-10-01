@@ -1,20 +1,21 @@
 import "dart:async";
+import "dart:io";
 import "dart:math";
 
-import "package:flow/constants.dart";
-import "package:flow/data/flow_button_type.dart";
-import "package:flow/data/prefs/change_visuals.dart";
-import "package:flow/data/transactions_filter/pending_time_range.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/transaction_filter_preset.dart";
-import "package:flow/entity/user_preferences.dart";
-import "package:flow/entity/user_preferences/transaction_entry_flow.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/services/currency_registry.dart";
-import "package:flow/services/sync.dart";
-import "package:flow/services/home_widgets.dart";
-import "package:flow/theme/color_themes/registry.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/flow_button_type.dart";
+import "package:spendly/data/prefs/change_visuals.dart";
+import "package:spendly/data/transactions_filter/pending_time_range.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/transaction_filter_preset.dart";
+import "package:spendly/entity/user_preferences.dart";
+import "package:spendly/entity/user_preferences/transaction_entry_flow.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/services/currency_registry.dart";
+import "package:spendly/services/sync.dart";
+import "package:spendly/services/home_widgets.dart";
+import "package:spendly/theme/color_themes/registry.dart";
 import "package:flutter/material.dart";
 import "package:home_widget/home_widget.dart";
 import "package:intl/intl.dart";
@@ -323,6 +324,8 @@ class UserPreferencesService {
   UserPreferencesService._internal();
 
   void _updateButtonsWidgets(List<FlowButtonType> order) async {
+    if (!Platform.isIOS && !Platform.isAndroid) return;
+
     try {
       final String value = order
           .where((e) => e != FlowButtonType.eny && e != FlowButtonType.transfer)

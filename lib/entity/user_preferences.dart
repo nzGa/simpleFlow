@@ -1,9 +1,9 @@
-import "package:flow/data/flow_button_type.dart";
-import "package:flow/data/prefs/change_visuals.dart";
-import "package:flow/data/transactions_filter/pending_time_range.dart";
-import "package:flow/entity/_base.dart";
-import "package:flow/entity/user_preferences/transaction_entry_flow.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/data/flow_button_type.dart";
+import "package:spendly/data/prefs/change_visuals.dart";
+import "package:spendly/data/transactions_filter/pending_time_range.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/entity/user_preferences/transaction_entry_flow.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:objectbox/objectbox.dart";
 import "package:uuid/uuid.dart";

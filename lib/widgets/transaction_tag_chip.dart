@@ -1,8 +1,8 @@
 import "package:dashed_border/dashed_border.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/flow_icon.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/material_symbols_icons.dart";
 

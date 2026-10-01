@@ -1,4 +1,4 @@
-import "package:flow/utils/jasonable.dart";
+import "package:spendly/utils/jasonable.dart";
 
 abstract class TransactionExtension implements Jasonable {
   final String uuid;

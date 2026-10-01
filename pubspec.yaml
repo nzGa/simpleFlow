@@ -1,5 +1,5 @@
-name: flow
-description: simpleFlow, a personal finance tracker
+name: spendly
+description: Spendly, a personal finance tracker
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 

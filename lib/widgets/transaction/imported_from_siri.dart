@@ -1,5 +1,5 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/helpers.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/helpers.dart";
 import "package:flutter/material.dart";
 
 class ImportedFromSiri extends StatelessWidget {

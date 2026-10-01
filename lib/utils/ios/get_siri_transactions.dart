@@ -2,8 +2,8 @@ import "dart:async";
 import "dart:convert";
 import "dart:io";
 
-import "package:flow/constants.dart";
-import "package:flow/data/transaction_programmable_object.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/transaction_programmable_object.dart";
 import "package:flutter_app_group_directory/flutter_app_group_directory.dart";
 
 final String _siriFileName = "recorded_transactions.jsonl";

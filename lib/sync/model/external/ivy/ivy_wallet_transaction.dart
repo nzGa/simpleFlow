@@ -1,4 +1,4 @@
-import "package:flow/entity/transaction.dart";
+import "package:spendly/entity/transaction.dart";
 
 class IvyWalletTransaction {
   final String uuid;

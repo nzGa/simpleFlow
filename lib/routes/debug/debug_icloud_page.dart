@@ -1,9 +1,9 @@
 import "dart:developer";
 
-import "package:flow/services/sync/icloud_syncer.dart";
-import "package:flow/services/sync/syncer.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/directional_slidable.dart";
+import "package:spendly/services/sync/icloud_syncer.dart";
+import "package:spendly/services/sync/syncer.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/directional_slidable.dart";
 import "package:flutter/material.dart";
 import "package:flutter_slidable/flutter_slidable.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

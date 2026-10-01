@@ -1,7 +1,7 @@
 import "dart:async";
 
-import "package:flow/data/flow_notification_payload.dart";
-import "package:flow/entity/transaction.dart";
+import "package:spendly/data/flow_notification_payload.dart";
+import "package:spendly/entity/transaction.dart";
 import "package:flutter_local_notifications/flutter_local_notifications.dart";
 import "package:logging/logging.dart";
 

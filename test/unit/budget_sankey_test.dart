@@ -1,4 +1,4 @@
-import "package:flow/widgets/analytics/sankey_diagram.dart";
+import "package:spendly/widgets/analytics/sankey_diagram.dart";
 import "package:flutter/material.dart";
 import "package:flutter_test/flutter_test.dart";
 

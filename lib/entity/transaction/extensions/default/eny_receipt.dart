@@ -1,5 +1,5 @@
-import "package:flow/entity/transaction/extensions/base.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/entity/transaction/extensions/base.dart";
+import "package:spendly/utils/utils.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "eny_receipt.g.dart";

@@ -1,13 +1,13 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/list_header.dart";
-import "package:flow/widgets/home/stats/bento/calendar_tile.dart";
-import "package:flow/widgets/home/stats/bento/cash_flow_tile.dart";
-import "package:flow/widgets/home/stats/bento/net_worth_tile.dart";
-import "package:flow/widgets/home/stats/bento/pace_tile.dart";
-import "package:flow/widgets/home/stats/bento/recurring_tile.dart";
-import "package:flow/widgets/home/stats/bento/top_categories_tile.dart";
-import "package:flow/widgets/home/stats/bento/wrapped_tile.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/list_header.dart";
+import "package:spendly/widgets/home/stats/bento/calendar_tile.dart";
+import "package:spendly/widgets/home/stats/bento/cash_flow_tile.dart";
+import "package:spendly/widgets/home/stats/bento/net_worth_tile.dart";
+import "package:spendly/widgets/home/stats/bento/pace_tile.dart";
+import "package:spendly/widgets/home/stats/bento/recurring_tile.dart";
+import "package:spendly/widgets/home/stats/bento/top_categories_tile.dart";
+import "package:spendly/widgets/home/stats/bento/wrapped_tile.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 

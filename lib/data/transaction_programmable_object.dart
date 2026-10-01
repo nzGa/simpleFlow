@@ -1,9 +1,9 @@
-import "package:flow/data/money.dart";
-import "package:flow/entity/transaction/type.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/utils/loose_parsers.dart";
-import "package:flow/utils/money_parsing.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/transaction/type.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/utils/loose_parsers.dart";
+import "package:spendly/utils/money_parsing.dart";
+import "package:spendly/utils/utils.dart";
 import "package:moment_dart/moment_dart.dart";
 import "package:uuid/uuid.dart";
 

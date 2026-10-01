@@ -1,4 +1,4 @@
-import "package:flow/logging.dart";
+import "package:spendly/logging.dart";
 import "package:url_launcher/url_launcher.dart";
 
 Future<bool> openUrl(

@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.mn.flow.flow</string>
+		<string>iCloud.com.nzga.spendly</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
@@ -17,11 +17,11 @@
 	<true/>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
-		<string>iCloud.mn.flow.flow</string>
+		<string>iCloud.com.nzga.spendly</string>
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.mn.flow.flow</string>
+		<string>group.com.nzga.spendly</string>
 	</array>
 </dict>
 </plist>

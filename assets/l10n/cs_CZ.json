@@ -32,7 +32,7 @@
   "account.updateBalance.updateAtDate.description": "Ideální, pokud znáte přesný zůstatek k určitému datu v minulosti.",
   "account.updateBalance.updateCurrent": "Aktualizovat aktuální zůstatek",
   "accounts": "Účty",
-  "appName": "simpleFlow",
+  "appName": "Spendly",
   "appShortDesc": "Váš osobní správce financí",
   "budget.alert.action": "Zkontrolovat",
   "budget.alert.left": "Zbývá {amount}",

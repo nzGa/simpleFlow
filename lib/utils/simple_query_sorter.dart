@@ -1,7 +1,7 @@
-import "package:flow/data/currencies.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction_tag.dart";
+import "package:spendly/data/currencies.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction_tag.dart";
 import "package:fuzzywuzzy/fuzzywuzzy.dart";
 
 List<T> simpleSortByQuery<T>(List<T> items, String query) {

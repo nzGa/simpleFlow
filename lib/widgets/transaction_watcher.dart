@@ -1,4 +1,4 @@
-import "package:flow/services/transactions.dart";
+import "package:spendly/services/transactions.dart";
 import "package:flutter/material.dart";
 
 /// Rerenders its subtree when there are changes in the transactions.

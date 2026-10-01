@@ -1,4 +1,4 @@
-import "package:flow/utils/extensions/directionality.dart";
+import "package:spendly/utils/extensions/directionality.dart";
 import "package:flutter/material.dart";
 
 class RTLFlipper extends StatelessWidget {

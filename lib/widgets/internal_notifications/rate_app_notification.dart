@@ -1,9 +1,9 @@
 import "dart:io";
 
-import "package:flow/constants.dart";
-import "package:flow/data/actionable_nofications/actionable_notification.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/widgets/internal_notifications/internal_notification_list_tile.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/actionable_nofications/actionable_notification.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/widgets/internal_notifications/internal_notification_list_tile.dart";
 import "package:flutter/material.dart";
 import "package:in_app_review/in_app_review.dart";
 

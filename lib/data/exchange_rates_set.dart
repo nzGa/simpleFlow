@@ -1,5 +1,5 @@
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/services/currency_registry.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/services/currency_registry.dart";
 
 class ExchangeRatesSet {
   final Map<String, ExchangeRates> rates;

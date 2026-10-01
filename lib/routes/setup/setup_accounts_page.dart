@@ -1,6 +1,6 @@
-import "package:flow/data/setup/default_accounts.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/widgets/general/spinner.dart";
+import "package:spendly/data/setup/default_accounts.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/widgets/general/spinner.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 

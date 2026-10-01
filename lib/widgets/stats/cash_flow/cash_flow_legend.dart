@@ -1,8 +1,8 @@
-import "package:flow/data/money.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/analytics/sankey_diagram.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/money_text.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/analytics/sankey_diagram.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/money_text.dart";
 import "package:flutter/material.dart";
 
 /// A color-swatch + label + amount legend for one side of the cash-flow Sankey.

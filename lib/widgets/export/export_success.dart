@@ -1,14 +1,14 @@
 import "dart:io";
 
-import "package:flow/constants.dart";
-import "package:flow/data/flow_icon.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/sync/export/mode.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/button.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/info_text.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/sync/export/mode.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/button.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/info_text.dart";
 import "package:flutter/gestures.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";

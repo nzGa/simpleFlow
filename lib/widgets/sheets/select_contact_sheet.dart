@@ -1,12 +1,12 @@
 import "dart:typed_data";
 
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/utils/extensions/flutter_contact.dart";
-import "package:flow/utils/optional.dart";
-import "package:flow/widgets/general/modal_overflow_bar.dart";
-import "package:flow/widgets/general/modal_sheet.dart";
-import "package:flow/widgets/general/spinner.dart";
-import "package:flow/widgets/sheets/select_contact_sheet/no_contacts.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/utils/extensions/flutter_contact.dart";
+import "package:spendly/utils/optional.dart";
+import "package:spendly/widgets/general/modal_overflow_bar.dart";
+import "package:spendly/widgets/general/modal_sheet.dart";
+import "package:spendly/widgets/general/spinner.dart";
+import "package:spendly/widgets/sheets/select_contact_sheet/no_contacts.dart";
 import "package:flutter/material.dart";
 import "package:flutter_contacts/flutter_contacts.dart";
 import "package:fuzzywuzzy/fuzzywuzzy.dart";

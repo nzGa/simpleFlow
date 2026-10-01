@@ -1,5 +1,5 @@
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/theme/theme.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart";

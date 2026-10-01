@@ -1,15 +1,15 @@
 import "dart:io";
 
 import "package:cross_file/cross_file.dart";
-import "package:flow/constants.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/sync/import.dart";
-import "package:flow/sync/import/base.dart";
-import "package:flow/utils/extensions/importer.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/list_header.dart";
-import "package:flow/widgets/general/spinner.dart";
-import "package:flow/widgets/import/file_select_area.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/sync/import.dart";
+import "package:spendly/sync/import/base.dart";
+import "package:spendly/utils/extensions/importer.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/list_header.dart";
+import "package:spendly/widgets/general/spinner.dart";
+import "package:spendly/widgets/import/file_select_area.dart";
 import "package:flutter/material.dart";
 import "package:logging/logging.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

@@ -1,5 +1,5 @@
-import "package:flow/data/setup/default_categories.dart";
-import "package:flow/entity/category.dart";
+import "package:spendly/data/setup/default_categories.dart";
+import "package:spendly/entity/category.dart";
 import "package:flutter_test/flutter_test.dart";
 
 void main() {

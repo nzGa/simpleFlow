@@ -1,11 +1,11 @@
-import "package:flow/entity/user_preferences/transaction_entry_flow.dart";
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/info_text.dart";
-import "package:flow/widgets/general/wavy_divider.dart";
+import "package:spendly/entity/user_preferences/transaction_entry_flow.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/info_text.dart";
+import "package:spendly/widgets/general/wavy_divider.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

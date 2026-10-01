@@ -1,14 +1,14 @@
-import "package:flow/data/money.dart";
-import "package:flow/entity/_base.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/file_attachment.dart";
-import "package:flow/entity/transaction/extensions/base.dart";
-import "package:flow/entity/transaction/subtype.dart";
-import "package:flow/entity/transaction/type.dart";
-import "package:flow/entity/transaction/wrapper.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/file_attachment.dart";
+import "package:spendly/entity/transaction/extensions/base.dart";
+import "package:spendly/entity/transaction/subtype.dart";
+import "package:spendly/entity/transaction/type.dart";
+import "package:spendly/entity/transaction/wrapper.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:objectbox/objectbox.dart";
 

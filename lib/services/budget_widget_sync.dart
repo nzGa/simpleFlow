@@ -1,12 +1,12 @@
 import "dart:convert";
 import "dart:io";
 
-import "package:flow/constants.dart";
-import "package:flow/data/budget_progress.dart";
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/services/budget.dart";
-import "package:flow/services/exchange_rates.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/budget_progress.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/services/budget.dart";
+import "package:spendly/services/exchange_rates.dart";
 import "package:home_widget/home_widget.dart";
 import "package:intl/intl.dart";
 import "package:logging/logging.dart";
@@ -89,6 +89,8 @@ class BudgetWidgetSync {
   }
 
   static Future<void> sync() async {
+    if (!Platform.isIOS && !Platform.isAndroid) return;
+
     try {
       final ExchangeRates? rates = ExchangeRatesService()
           .getPrimaryCurrencyRates();

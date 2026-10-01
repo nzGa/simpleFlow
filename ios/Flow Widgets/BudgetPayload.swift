@@ -337,7 +337,7 @@ extension BudgetPayload {
 // MARK: - Store
 
 enum BudgetPayloadStore {
-    static let appGroupId = "group.mn.flow.flow"
+    static let appGroupId = "group.com.nzga.spendly"
     static let payloadKey = "budgetsPayload"
     /// Bump only together with `BudgetWidgetSync.payloadVersion` on the Dart side.
     static let supportedVersion = 3

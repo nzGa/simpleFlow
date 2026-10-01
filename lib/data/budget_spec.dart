@@ -1,6 +1,6 @@
 import "dart:typed_data";
 
-import "package:flow/data/exchange_rates.dart";
+import "package:spendly/data/exchange_rates.dart";
 
 /// Everything the spend computation needs about one budget, as plain data.
 ///

@@ -1,12 +1,12 @@
 import "dart:io";
 
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/routes/preferences_page.dart";
-import "package:flow/services/local_auth.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/info_text.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/routes/preferences_page.dart";
+import "package:spendly/services/local_auth.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/info_text.dart";
 import "package:flutter/material.dart";
 import "package:logging/logging.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

@@ -1,4 +1,4 @@
-import "package:flow/services/notifications.dart";
+import "package:spendly/services/notifications.dart";
 import "package:flutter/material.dart";
 import "package:flutter_local_notifications/flutter_local_notifications.dart";
 

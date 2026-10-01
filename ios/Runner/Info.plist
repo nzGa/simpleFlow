@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>simpleFlow</string>
+	<string>Spendly</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIcons</key>
@@ -362,7 +362,7 @@
 		<string>uk</string>
 	</array>
 	<key>CFBundleName</key>
-	<string>flow</string>
+	<string>spendly</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -377,10 +377,10 @@
 			<key>CFBundleURLIconFile</key>
 			<string>shadeOfViolet@3x</string>
 			<key>CFBundleURLName</key>
-			<string>mn.flow.flow</string>
+			<string>com.nzga.spendly</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>flow-mn</string>
+				<string>spendly</string>
 			</array>
 		</dict>
 	</array>

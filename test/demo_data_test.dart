@@ -1,11 +1,11 @@
 import "dart:io";
 
-import "package:flow/entity/account.dart";
-import "package:flow/entity/budget.dart";
-import "package:flow/entity/goal.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/objectbox.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/entity/goal.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/objectbox.dart";
 import "package:flutter/widgets.dart";
 import "package:flutter_test/flutter_test.dart";
 import "package:path/path.dart" as path;

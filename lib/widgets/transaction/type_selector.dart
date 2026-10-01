@@ -1,7 +1,7 @@
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/theme/theme.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

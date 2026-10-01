@@ -1,11 +1,11 @@
 import "dart:developer";
 
-import "package:flow/l10n/extensions.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/utils/extensions.dart";
-import "package:flow/widgets/general/list_header.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/utils/extensions.dart";
+import "package:spendly/widgets/general/list_header.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

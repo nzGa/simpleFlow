@@ -1,5 +1,5 @@
-import "package:flow/data/money.dart";
-import "package:flow/entity/budget.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/budget.dart";
 import "package:moment_dart/moment_dart.dart";
 
 /// How a budget is tracking against its limit, as a coarse three-way status.

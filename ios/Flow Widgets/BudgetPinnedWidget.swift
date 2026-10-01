@@ -287,9 +287,9 @@ struct FlowBudgetPinnedWidget: Widget {
     /// budget has inherited it, the tap opens that one instead.
     private func destination(for entry: BudgetPinnedEntry) -> URL? {
         if let id = entry.budget?.id {
-            return URL(string: "flow-mn:///budgets/\(id)")
+            return URL(string: "spendly:///budgets/\(id)")
         }
-        return URL(string: "flow-mn:///budgets")
+        return URL(string: "spendly:///budgets")
     }
 }
 

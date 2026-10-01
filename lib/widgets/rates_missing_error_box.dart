@@ -1,10 +1,10 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/extensions/toast.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/spinner.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/extensions/toast.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/spinner.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

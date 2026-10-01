@@ -26,4 +26,4 @@ const LatLng sukhbaatarSquareCenter = LatLng(
   sukhbaatarSquareCenterLong,
 );
 
-const String iOSAppGroupId = "group.mn.flow.flow";
+const String iOSAppGroupId = "group.com.nzga.spendly";

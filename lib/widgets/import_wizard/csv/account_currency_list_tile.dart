@@ -1,4 +1,4 @@
-import "package:flow/theme/helpers.dart";
+import "package:spendly/theme/helpers.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

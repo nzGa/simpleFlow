@@ -1,10 +1,10 @@
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/sync/import/base.dart";
-import "package:flow/sync/import/external/ivy_wallet_csv.dart";
-import "package:flow/sync/import/import_csv.dart";
-import "package:flow/sync/import/import_v1.dart";
-import "package:flow/sync/import/import_v2.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/sync/import/base.dart";
+import "package:spendly/sync/import/external/ivy_wallet_csv.dart";
+import "package:spendly/sync/import/import_csv.dart";
+import "package:spendly/sync/import/import_v1.dart";
+import "package:spendly/sync/import/import_v2.dart";
+import "package:spendly/utils/utils.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 

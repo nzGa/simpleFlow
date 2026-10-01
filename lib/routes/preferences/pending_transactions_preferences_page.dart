@@ -1,11 +1,11 @@
-import "package:flow/data/transactions_filter/pending_time_range.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/info_text.dart";
-import "package:flow/widgets/general/list_header.dart";
+import "package:spendly/data/transactions_filter/pending_time_range.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/info_text.dart";
+import "package:spendly/widgets/general/list_header.dart";
 import "package:flutter/material.dart";
 
 class PendingTransactionPreferencesPage extends StatefulWidget {

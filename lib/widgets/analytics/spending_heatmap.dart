@@ -1,6 +1,6 @@
-import "package:flow/data/money.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/theme.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 

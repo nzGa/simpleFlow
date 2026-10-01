@@ -1,9 +1,9 @@
 import "dart:convert";
 
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/data/transactions_filter/time_range.dart";
-import "package:flow/entity/_base.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/data/transactions_filter/time_range.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:objectbox/objectbox.dart";
 import "package:uuid/uuid.dart";

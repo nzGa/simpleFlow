@@ -1,14 +1,14 @@
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/data/transactions_filter/time_range.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction/type.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/services/accounts.dart";
-import "package:flow/services/categories.dart";
-import "package:flow/utils/time_and_range.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/data/transactions_filter/time_range.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction/type.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/services/accounts.dart";
+import "package:spendly/services/categories.dart";
+import "package:spendly/utils/time_and_range.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 

@@ -1,7 +1,7 @@
-import "package:flow/data/money.dart";
-import "package:flow/data/single_currency_flow.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/reports/report.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/data/single_currency_flow.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/reports/report.dart";
 import "package:moment_dart/moment_dart.dart";
 
 class RangeForecastReport extends FlowReport {

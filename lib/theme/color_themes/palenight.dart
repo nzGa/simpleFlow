@@ -1,6 +1,6 @@
 import "dart:ui";
 
-import "package:flow/theme/flow_color_scheme.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
 
 final FlowColorScheme palenight = FlowColorScheme(
   name: "palenight",

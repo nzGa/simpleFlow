@@ -1,7 +1,7 @@
 import "dart:developer";
 import "dart:io";
 
-import "package:flow/entity/backup_entry.dart";
+import "package:spendly/entity/backup_entry.dart";
 import "package:path/path.dart";
 
 class SyncerItem {

@@ -1,4 +1,4 @@
-import "package:flow/data/prefs/frecency.dart";
+import "package:spendly/data/prefs/frecency.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "frecency_group.g.dart";

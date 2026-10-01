@@ -4,26 +4,26 @@ import "dart:io";
 import "dart:typed_data";
 
 import "package:archive/archive_io.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/sync/exception.dart";
-import "package:flow/sync/import/base.dart";
-import "package:flow/sync/import/external/ivy_wallet_csv.dart";
-import "package:flow/sync/import/import_csv.dart";
-import "package:flow/sync/import/import_v1.dart";
-import "package:flow/sync/import/import_v2.dart";
-import "package:flow/sync/model/csv/parsed_data.dart";
-import "package:flow/sync/model/external/ivy/ivy_wallet_csv.dart";
-import "package:flow/sync/model/model_v1.dart";
-import "package:flow/sync/model/model_v2.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/sync/exception.dart";
+import "package:spendly/sync/import/base.dart";
+import "package:spendly/sync/import/external/ivy_wallet_csv.dart";
+import "package:spendly/sync/import/import_csv.dart";
+import "package:spendly/sync/import/import_v1.dart";
+import "package:spendly/sync/import/import_v2.dart";
+import "package:spendly/sync/model/csv/parsed_data.dart";
+import "package:spendly/sync/model/external/ivy/ivy_wallet_csv.dart";
+import "package:spendly/sync/model/model_v1.dart";
+import "package:spendly/sync/model/model_v2.dart";
+import "package:spendly/utils/utils.dart";
 import "package:logging/logging.dart";
 import "package:path/path.dart" as path;
 import "package:path_provider/path_provider.dart";
 
-export "package:flow/sync/import/import_v1.dart";
-export "package:flow/sync/model/model_v1.dart";
+export "package:spendly/sync/import/import_v1.dart";
+export "package:spendly/sync/model/model_v1.dart";
 
 final Logger _log = Logger("Import Backup");
 

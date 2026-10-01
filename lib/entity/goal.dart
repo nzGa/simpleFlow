@@ -1,8 +1,8 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/_base.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/utils/json/time_range_converter.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/utils/json/time_range_converter.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:moment_dart/moment_dart.dart";

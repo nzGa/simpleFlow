@@ -1,4 +1,4 @@
-import "package:flow/data/flow_button_type.dart";
+import "package:spendly/data/flow_button_type.dart";
 import "package:flutter/material.dart";
 
 class TransactionTypeButton extends StatelessWidget {

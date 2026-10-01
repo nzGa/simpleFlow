@@ -1,9 +1,9 @@
 import "dart:io";
 
-import "package:flow/entity/transaction.dart";
-import "package:flow/sync/model/external/ivy/ivy_wallet_transaction.dart";
-import "package:flow/sync/model/external/ivy/parsers.dart";
-import "package:flow/utils/csv_parser.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/sync/model/external/ivy/ivy_wallet_transaction.dart";
+import "package:spendly/sync/model/external/ivy/parsers.dart";
+import "package:spendly/utils/csv_parser.dart";
 import "package:intl/intl.dart";
 
 class IvyWalletCsv {

@@ -1,8 +1,8 @@
 import "dart:convert";
 
-import "package:flow/entity/transaction.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/sync/export/export_v1.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/sync/export/export_v1.dart";
 import "package:flutter_test/flutter_test.dart";
 
 import "../database_test.dart";

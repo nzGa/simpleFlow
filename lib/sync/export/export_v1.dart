@@ -1,16 +1,16 @@
 import "dart:convert";
 
-import "package:flow/constants.dart";
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/profile.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/logging.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/sync/model/model_v1.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/profile.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/logging.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/sync/model/model_v1.dart";
 
 Future<String> generateBackupContentV1() async {
   const int versionCode = 1;

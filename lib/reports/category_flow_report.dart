@@ -1,7 +1,7 @@
-import "package:flow/data/multi_currency_flow.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/reports/report.dart";
+import "package:spendly/data/multi_currency_flow.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/reports/report.dart";
 import "package:uuid/uuid.dart";
 
 class CategoryFlowReport extends FlowReport {

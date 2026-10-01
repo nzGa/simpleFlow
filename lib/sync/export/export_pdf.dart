@@ -1,20 +1,20 @@
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/multi_currency_flow.dart";
-import "package:flow/data/single_currency_flow.dart";
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/data/transactions_filter/time_range.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/profile.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/services/accounts.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/sync/export/export_pdf/headers.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/multi_currency_flow.dart";
+import "package:spendly/data/single_currency_flow.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/data/transactions_filter/time_range.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/profile.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/services/accounts.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/sync/export/export_pdf/headers.dart";
 import "package:flutter/services.dart";
 import "package:moment_dart/moment_dart.dart";
 import "package:pdf/pdf.dart";
@@ -241,7 +241,7 @@ Future<Uint8List> generatePDFContent({
   final pw.Document pdf = pw.Document(
     theme: pw.ThemeData(defaultTextStyle: defaultTextStyle),
     // TODO @sadespresso add l10n support
-    title: "simpleFlow - Transactions statement (${options.timeRange})",
+    title: "Spendly - Transactions statement (${options.timeRange})",
     author: author,
     keywords: "Flow, statement, personal, non-legal",
   );

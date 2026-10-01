@@ -62,7 +62,7 @@ class NavigationService {
 
     _log.info("Received app link URI: $uri");
 
-    if (uri.scheme != "flow-mn") {
+    if (uri.scheme != "spendly") {
       _log.warning("Ignoring non-flow scheme URI: $uri");
       return;
     }

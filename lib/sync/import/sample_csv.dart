@@ -1,6 +1,6 @@
-import "package:flow/sync/exception.dart";
-import "package:flow/sync/import/import_csv.dart";
-import "package:flow/sync/model/csv/parsed_data.dart";
+import "package:spendly/sync/exception.dart";
+import "package:spendly/sync/import/import_csv.dart";
+import "package:spendly/sync/model/csv/parsed_data.dart";
 import "package:flutter/services.dart";
 
 /// Bundled six-month sample CSV used by Profile → Load sample data.
@@ -8,12 +8,12 @@ const String sampleImportCsvAssetPath = "assets/sample_import.csv";
 
 /// Account currencies for [sampleImportCsvAssetPath].
 ///
-/// Principal, Efectivo, and Ahorros are ARS; Dólares is USD.
+/// All sample accounts and movements use EUR.
 const Map<String, String> sampleImportAccountCurrencies = {
-  "Principal": "ARS",
-  "Efectivo": "ARS",
-  "Ahorros": "ARS",
-  "Dólares": "USD",
+  "Principal": "EUR",
+  "Efectivo": "EUR",
+  "Ahorros": "EUR",
+  "Euros": "EUR",
 };
 
 /// Loads the bundled sample CSV and pre-assigns account currencies.

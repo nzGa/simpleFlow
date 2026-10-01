@@ -1,10 +1,10 @@
 import "dart:io";
 
-import "package:flow/l10n/extensions.dart";
-import "package:flow/main.dart" show mainLogAppender;
-import "package:flow/theme/helpers.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/directional_slidable.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/main.dart" show mainLogAppender;
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/directional_slidable.dart";
 import "package:flutter/material.dart";
 import "package:flutter_slidable/flutter_slidable.dart";
 import "package:go_router/go_router.dart";

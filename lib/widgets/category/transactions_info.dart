@@ -1,10 +1,10 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/data/money.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/surface.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/surface.dart";
 import "package:flutter/material.dart";
 
 class TransactionsInfo extends StatelessWidget {

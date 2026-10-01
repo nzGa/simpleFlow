@@ -1,9 +1,9 @@
 import "dart:io";
 
-import "package:flow/data/setup/default_categories.dart";
-import "package:flow/sync/import/sample_csv.dart";
-import "package:flow/sync/model/csv/parsed_data.dart";
-import "package:flow/sync/model/csv/parsers.dart";
+import "package:spendly/data/setup/default_categories.dart";
+import "package:spendly/sync/import/sample_csv.dart";
+import "package:spendly/sync/model/csv/parsed_data.dart";
+import "package:spendly/sync/model/csv/parsers.dart";
 import "package:flutter_test/flutter_test.dart";
 
 void main() {
@@ -24,7 +24,7 @@ void main() {
 
     expect(invalid, CSVCellParserError.invalidDate);
   });
-  test("Sample six-month import csv", () {
+  test("Sample six-month import csv uses EUR and includes this month", () {
     final sample = CSVParsedData.fromString(
       File("assets/sample_import.csv").readAsStringSync(),
     );
@@ -33,12 +33,13 @@ void main() {
       "Principal",
       "Efectivo",
       "Ahorros",
-      "Dólares",
+      "Euros",
     });
     expect(
       sample.accountNames.every(sampleImportAccountCurrencies.containsKey),
       isTrue,
     );
+    expect(sampleImportAccountCurrencies.values.toSet(), {"EUR"});
     expect(sample.transactions.length, greaterThan(400));
     expect(sample.categoryNames.nonNulls.length, greaterThanOrEqualTo(15));
 
@@ -46,9 +47,13 @@ void main() {
     expect(
       dates.every(
         (d) =>
-            !d.isBefore(DateTime(2026, 3, 14)) &&
-            !d.isAfter(DateTime(2026, 9, 14, 23, 59, 59)),
+            !d.isBefore(DateTime(2026, 4, 1)) &&
+            !d.isAfter(DateTime(2026, 10, 1, 23, 59, 59)),
       ),
+      isTrue,
+    );
+    expect(
+      dates.any((d) => d.year == 2026 && d.month == 10),
       isTrue,
     );
     expect(sample.transactions.any((t) => t.amount < 0), isTrue);

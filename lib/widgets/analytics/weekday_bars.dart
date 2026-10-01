@@ -1,4 +1,4 @@
-import "package:flow/theme/theme.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 
 /// A small 7-bar weekday spend strip (Mon .. Sun), highlighting [topWeekday].

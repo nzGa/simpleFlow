@@ -1,5 +1,5 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/theme.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 
 class NoResult extends StatelessWidget {

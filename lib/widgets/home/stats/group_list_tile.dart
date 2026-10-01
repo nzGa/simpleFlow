@@ -1,12 +1,12 @@
-import "package:flow/data/chart_data.dart";
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/money_text.dart";
+import "package:spendly/data/chart_data.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/money_text.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

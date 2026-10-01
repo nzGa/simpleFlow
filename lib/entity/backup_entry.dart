@@ -1,9 +1,9 @@
 import "dart:io";
 
-import "package:flow/data/flow_icon.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/sync/sync.dart";
-import "package:flow/utils/extensions/string.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/sync/sync.dart";
+import "package:spendly/utils/extensions/string.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:objectbox/objectbox.dart";
 

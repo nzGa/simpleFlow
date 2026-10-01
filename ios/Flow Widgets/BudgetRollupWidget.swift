@@ -197,7 +197,7 @@ struct FlowBudgetRollupWidget: Widget {
                 // The overview, not the plain list: this widget *is* the
                 // overview in miniature, so a tap should expand what it shows
                 // rather than drop you somewhere adjacent.
-                .widgetURL(URL(string: "flow-mn:///stats/budgets"))
+                .widgetURL(URL(string: "spendly:///stats/budgets"))
         }
         .supportedFamilies([.systemMedium])
         .configurationDisplayName("Budgets")

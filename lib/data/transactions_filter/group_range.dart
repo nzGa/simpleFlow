@@ -1,5 +1,5 @@
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/named_enum.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/named_enum.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:moment_dart/moment_dart.dart";
 

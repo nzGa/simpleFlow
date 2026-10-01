@@ -1,6 +1,6 @@
-import "package:flow/l10n/localized_exception.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/theme/theme.dart";
+import "package:spendly/l10n/localized_exception.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

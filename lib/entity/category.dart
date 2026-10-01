@@ -1,9 +1,9 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/_base.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/theme/color_themes/registry.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/theme/color_themes/registry.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:objectbox/objectbox.dart";

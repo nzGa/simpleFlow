@@ -1,10 +1,10 @@
 import "dart:io";
 
 import "package:cross_file/cross_file.dart";
-import "package:flow/entity/file_attachment.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
+import "package:spendly/entity/file_attachment.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
 import "package:logging/logging.dart";
 import "package:path/path.dart" as path;
 import "package:uuid/uuid.dart";

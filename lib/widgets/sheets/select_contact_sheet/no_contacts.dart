@@ -1,6 +1,6 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/widgets/general/empty_state.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/widgets/general/empty_state.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:permission_handler/permission_handler.dart";

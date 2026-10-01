@@ -1,6 +1,6 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/l10n/extensions.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/l10n/extensions.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 
 /// Preset UUID for paychecks / Nómina.

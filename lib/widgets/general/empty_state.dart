@@ -1,6 +1,6 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/widgets/general/flow_icon.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
 import "package:flutter/widgets.dart";
 
 class EmptyState extends StatelessWidget {

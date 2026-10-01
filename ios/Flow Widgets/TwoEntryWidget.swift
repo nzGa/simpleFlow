@@ -15,7 +15,7 @@ struct TwoEntryProvider: TimelineProvider {
     }
     
     func getSnapshot(in context: Context, completion: @escaping (TwoEntryWidgetEntry) -> ()) {
-        let prefs = UserDefaults(suiteName: "group.mn.flow.flow")
+        let prefs = UserDefaults(suiteName: "group.com.nzga.spendly")
         let counter = prefs?.string(forKey: "buttonOrder")
         let order = counter?.components(separatedBy: ",") ?? ["transfer", "income", "expense"]
         let entry = TwoEntryWidgetEntry(date: Date(), order: order, color: .primary)
@@ -112,7 +112,7 @@ struct TwoEntryWidgetView: View {
 
     @ViewBuilder
     func button(type: String, size: Double, pill: Bool = false) -> some View {
-        Link(destination: URL(string: "flow-mn:///transaction/new?type=\(type)")!) {
+        Link(destination: URL(string: "spendly:///transaction/new?type=\(type)")!) {
             if (pill) {
                 Capsule()
                 .fill(.tertiary)

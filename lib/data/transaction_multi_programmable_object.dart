@@ -1,9 +1,9 @@
 import "dart:convert";
 
-import "package:flow/data/transaction_programmable_object.dart";
-import "package:flow/entity/transaction/extensions/base.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/utils/loose_parsers.dart";
+import "package:spendly/data/transaction_programmable_object.dart";
+import "package:spendly/entity/transaction/extensions/base.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/utils/loose_parsers.dart";
 
 class TransactionMultiProgrammableObject {
   final List<TransactionProgrammableObject> t;

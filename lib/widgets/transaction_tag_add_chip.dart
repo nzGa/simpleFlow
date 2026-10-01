@@ -1,7 +1,7 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/widgets/transaction_tag_chip.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/widgets/transaction_tag_chip.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

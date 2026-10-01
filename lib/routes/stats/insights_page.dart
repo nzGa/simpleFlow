@@ -1,10 +1,10 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/home/stats/bento/calendar_tile.dart";
-import "package:flow/widgets/home/stats/bento/net_worth_tile.dart";
-import "package:flow/widgets/home/stats/bento/recurring_tile.dart";
-import "package:flow/widgets/home/stats/bento/wrapped_tile.dart";
-import "package:flow/widgets/stats/stats_app_bar.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/home/stats/bento/calendar_tile.dart";
+import "package:spendly/widgets/home/stats/bento/net_worth_tile.dart";
+import "package:spendly/widgets/home/stats/bento/recurring_tile.dart";
+import "package:spendly/widgets/home/stats/bento/wrapped_tile.dart";
+import "package:spendly/widgets/stats/stats_app_bar.dart";
 import "package:flutter/material.dart";
 
 /// Index of the analytics ("Insights") pages.

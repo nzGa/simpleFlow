@@ -1,12 +1,12 @@
-import "package:flow/data/money.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/utils/optional.dart";
-import "package:flow/widgets/general/directional_chevron.dart";
-import "package:flow/widgets/general/money_text.dart";
-import "package:flow/widgets/sheets/select_currency_icu_pattern.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/utils/optional.dart";
+import "package:spendly/widgets/general/directional_chevron.dart";
+import "package:spendly/widgets/general/money_text.dart";
+import "package:spendly/widgets/sheets/select_currency_icu_pattern.dart";
 import "package:flutter/material.dart";
 
 class MoneyFormattingPreferencesPage extends StatefulWidget {

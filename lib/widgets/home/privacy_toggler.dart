@@ -1,4 +1,4 @@
-import "package:flow/prefs/transitive.dart";
+import "package:spendly/prefs/transitive.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

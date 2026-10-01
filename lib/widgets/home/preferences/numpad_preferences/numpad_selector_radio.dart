@@ -1,5 +1,5 @@
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/widgets/numpad.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/widgets/numpad.dart";
 import "package:flutter/material.dart";
 
 class NumpadSelectorRadio extends StatelessWidget {

@@ -1,5 +1,5 @@
-import "package:flow/theme/flow_custom_colors.dart";
-import "package:flow/widgets/analytics/bullet_chart.dart";
+import "package:spendly/theme/flow_custom_colors.dart";
+import "package:spendly/widgets/analytics/bullet_chart.dart";
 import "package:flutter/material.dart";
 import "package:flutter_test/flutter_test.dart";
 

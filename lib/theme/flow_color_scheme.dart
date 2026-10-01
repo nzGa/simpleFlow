@@ -1,7 +1,7 @@
-import "package:flow/theme/flow_custom_colors.dart";
+import "package:spendly/theme/flow_custom_colors.dart";
 import "package:flutter/material.dart";
 
-export "package:flow/theme/flow_custom_colors.dart";
+export "package:spendly/theme/flow_custom_colors.dart";
 
 const _defaultLightBase = ColorScheme(
   brightness: Brightness.light,

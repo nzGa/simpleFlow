@@ -1,6 +1,6 @@
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/surface.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/surface.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

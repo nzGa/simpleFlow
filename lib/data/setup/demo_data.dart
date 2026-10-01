@@ -1,11 +1,11 @@
 import "dart:math";
 
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/objectbox/actions.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/objectbox/actions.dart";
 import "package:flutter/widgets.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:uuid/uuid.dart";

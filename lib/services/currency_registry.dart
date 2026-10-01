@@ -1,7 +1,7 @@
-import "package:flow/data/currencies.dart";
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/data/currencies.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/utils/utils.dart";
 import "package:intl/intl.dart";
 
 class CurrencyRegistryService {

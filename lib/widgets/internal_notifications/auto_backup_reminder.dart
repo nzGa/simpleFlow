@@ -1,8 +1,8 @@
-import "package:flow/data/actionable_nofications/actionable_notification.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/internal_notifications/internal_notification_list_tile.dart";
+import "package:spendly/data/actionable_nofications/actionable_notification.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/internal_notifications/internal_notification_list_tile.dart";
 import "package:flutter/material.dart";
 import "package:logging/logging.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

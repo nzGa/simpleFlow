@@ -1,10 +1,10 @@
 import "package:auto_size_text/auto_size_text.dart";
-import "package:flow/data/money.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/flow_card.dart";
-import "package:flow/widgets/general/frame.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/flow_card.dart";
+import "package:spendly/widgets/general/frame.dart";
 import "package:flutter/material.dart";
 
 /// Hero header for the recurring page: the expected recurring [income] and

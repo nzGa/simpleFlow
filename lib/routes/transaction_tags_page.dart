@@ -1,9 +1,9 @@
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/spinner.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/spinner.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 

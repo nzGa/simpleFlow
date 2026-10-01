@@ -1,5 +1,5 @@
-import "package:flow/data/currencies.dart";
-import "package:flow/services/currency_registry.dart";
+import "package:spendly/data/currencies.dart";
+import "package:spendly/services/currency_registry.dart";
 import "package:moment_dart/moment_dart.dart";
 
 /// Uses endpoints from here:

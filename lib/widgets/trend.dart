@@ -1,7 +1,7 @@
-import "package:flow/data/money.dart";
-import "package:flow/data/prefs/change_visuals.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/helpers.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/data/prefs/change_visuals.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/helpers.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 
