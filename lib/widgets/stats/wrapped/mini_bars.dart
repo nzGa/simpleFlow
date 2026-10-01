@@ -1,4 +1,4 @@
-import "package:flow/theme/theme.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 
 /// A compact bar chart of [values] with the final (most recent) bar drawn in

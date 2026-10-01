@@ -1,5 +1,5 @@
 struct RecordedTransactionService {
-    static let groupId = "group.mn.flow.flow"
+    static let groupId = "group.com.nzga.spendly"
     static let fileName = "recorded_transactions.jsonl"
 
     static func append(_ tx: RecordedTransaction) throws {

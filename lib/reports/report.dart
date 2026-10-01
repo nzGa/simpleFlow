@@ -1,9 +1,9 @@
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/multi_currency_flow.dart";
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/data/transactions_filter/time_range.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/services/transactions.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/multi_currency_flow.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/data/transactions_filter/time_range.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/services/transactions.dart";
 import "package:moment_dart/moment_dart.dart";
 
 abstract class FlowReport {

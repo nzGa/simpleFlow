@@ -1,11 +1,11 @@
-import "package:flow/data/prefs/frecency_group.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/entity/transaction_type/payload.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/prefs/transitive.dart";
-import "package:flow/utils/extensions/iterables.dart";
-import "package:flow/widgets/transaction_watcher.dart";
+import "package:spendly/data/prefs/frecency_group.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/entity/transaction_type/payload.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/prefs/transitive.dart";
+import "package:spendly/utils/extensions/iterables.dart";
+import "package:spendly/widgets/transaction_watcher.dart";
 import "package:flutter/material.dart";
 import "package:latlong2/latlong.dart";
 

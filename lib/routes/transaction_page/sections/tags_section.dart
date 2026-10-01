@@ -1,10 +1,10 @@
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/routes/transaction_page/section.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/transaction_tag_add_chip.dart";
-import "package:flow/widgets/transaction_tag_chip.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/routes/transaction_page/section.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/transaction_tag_add_chip.dart";
+import "package:spendly/widgets/transaction_tag_chip.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 

@@ -1,15 +1,15 @@
 import "dart:io";
 
-import "package:flow/constants.dart";
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/single_currency_flow.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/services/user_preferences.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/single_currency_flow.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/services/user_preferences.dart";
 import "package:home_widget/home_widget.dart";
 import "package:logging/logging.dart";
 import "package:moment_dart/moment_dart.dart";
@@ -18,6 +18,8 @@ final Logger _log = Logger("WidgetSummarySync");
 
 class WidgetSummarySync {
   static Future<void> sync() async {
+    if (!Platform.isIOS && !Platform.isAndroid) return;
+
     try {
       final String primaryCurrency =
           UserPreferencesService().primaryCurrency;

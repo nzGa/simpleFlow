@@ -1,6 +1,6 @@
 # Contributing
 
-**SimpleFlow** is a personal modified copy of Flow. It is not the upstream project ([flow-mn/flow](https://github.com/flow-mn/flow)), and it is not looking for feature requests, issues, or translators.
+**Spendly** is a personal modified copy of Flow. It is not the upstream project ([flow-mn/flow](https://github.com/flow-mn/flow)), and it is not looking for feature requests, issues, or translators.
 
 You can still fork the code under the
 [GNU GPL v3](./LICENSE). Pull requests are not expected. If you open one

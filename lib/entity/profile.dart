@@ -1,6 +1,6 @@
-import "package:flow/entity/_base.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:objectbox/objectbox.dart";
 import "package:uuid/uuid.dart";

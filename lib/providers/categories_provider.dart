@@ -1,13 +1,13 @@
 import "dart:async";
 
-import "package:flow/data/prefs/frecency_group.dart";
-import "package:flow/data/setup/default_categories.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction/type.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/prefs/transitive.dart";
-import "package:flow/utils/extensions/iterables.dart";
+import "package:spendly/data/prefs/frecency_group.dart";
+import "package:spendly/data/setup/default_categories.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction/type.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/prefs/transitive.dart";
+import "package:spendly/utils/extensions/iterables.dart";
 import "package:flutter/material.dart";
 
 class CategoriesProviderScope extends StatefulWidget {

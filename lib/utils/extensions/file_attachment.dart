@@ -1,4 +1,4 @@
-import "package:flow/entity/file_attachment.dart";
+import "package:spendly/entity/file_attachment.dart";
 import "package:flutter/widgets.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:path/path.dart" as path;

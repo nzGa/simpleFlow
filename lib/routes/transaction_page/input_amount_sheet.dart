@@ -1,16 +1,16 @@
 import "dart:math";
 
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/routes/transaction_page/amount_text.dart";
-import "package:flow/routes/transaction_page/input_amount_sheet/calculator_button.dart";
-import "package:flow/routes/transaction_page/input_amount_sheet/input_value.dart";
-import "package:flow/services/currency_registry.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/money_parsing.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/modal_sheet.dart";
-import "package:flow/widgets/numpad.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/routes/transaction_page/amount_text.dart";
+import "package:spendly/routes/transaction_page/input_amount_sheet/calculator_button.dart";
+import "package:spendly/routes/transaction_page/input_amount_sheet/input_value.dart";
+import "package:spendly/services/currency_registry.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/money_parsing.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/modal_sheet.dart";
+import "package:spendly/widgets/numpad.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:go_router/go_router.dart";

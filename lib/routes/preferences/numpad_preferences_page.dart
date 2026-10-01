@@ -1,7 +1,7 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/widgets/home/preferences/numpad_preferences/numpad_selector_radio.dart";
-import "package:flow/widgets/general/list_header.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/widgets/home/preferences/numpad_preferences/numpad_selector_radio.dart";
+import "package:spendly/widgets/general/list_header.dart";
 import "package:flutter/material.dart";
 
 class NumpadPreferencesPage extends StatefulWidget {

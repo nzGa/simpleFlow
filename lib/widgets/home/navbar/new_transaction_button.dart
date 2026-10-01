@@ -1,12 +1,12 @@
 import "dart:math";
 
-import "package:flow/data/flow_button_type.dart";
-import "package:flow/entity/user_preferences.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/navbar_theme.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/extensions/directionality.dart";
+import "package:spendly/data/flow_button_type.dart";
+import "package:spendly/entity/user_preferences.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/navbar_theme.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/extensions/directionality.dart";
 import "package:flutter/material.dart" hide Flow;
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:pie_menu/pie_menu.dart";

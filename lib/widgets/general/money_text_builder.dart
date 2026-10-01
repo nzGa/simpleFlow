@@ -1,6 +1,6 @@
-import "package:flow/data/money.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/utils/utils.dart";
 import "package:flutter/material.dart";
 
 class MoneyTextBuilder extends StatefulWidget {

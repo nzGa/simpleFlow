@@ -1,12 +1,12 @@
 import "dart:io";
 
-import "package:flow/data/transaction_programmable_object.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/services/external_toasts.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/utils/ios/get_siri_transactions.dart";
+import "package:spendly/data/transaction_programmable_object.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/services/external_toasts.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/utils/ios/get_siri_transactions.dart";
 import "package:logging/logging.dart";
 
 final Logger _log = Logger("SiriPendingService");

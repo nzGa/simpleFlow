@@ -1,13 +1,13 @@
 import "dart:convert";
 import "dart:io";
 
-import "package:flow/entity/account.dart";
-import "package:flow/entity/budget.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/sync/export/export_v2.dart";
-import "package:flow/sync/model/model_v2.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/sync/export/export_v2.dart";
+import "package:spendly/sync/model/model_v2.dart";
 import "package:flutter_test/flutter_test.dart";
 import "package:moment_dart/moment_dart.dart";
 import "package:path/path.dart" as path;

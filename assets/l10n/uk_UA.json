@@ -32,7 +32,7 @@
   "account.updateBalance.updateAtDate.description": "Ідеально, якщо ви знаєте точний баланс на певну дату",
   "account.updateBalance.updateCurrent": "Оновити поточний баланс",
   "accounts": "Рахунки",
-  "appName": "simpleFlow",
+  "appName": "Spendly",
   "appShortDesc": "Ваш особистий фінансовий трекер",
   "budget.alert.action": "Переглянути",
   "budget.alert.left": "{amount} залишилося",

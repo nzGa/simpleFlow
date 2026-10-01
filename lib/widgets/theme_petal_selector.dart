@@ -1,12 +1,12 @@
 import "dart:math" as math;
 
-import "package:flow/data/flow_icon.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/flow_theme_group.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/theme_petal_selector/theme_petal_painter.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/flow_theme_group.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/theme_petal_selector/theme_petal_painter.dart";
 import "package:flutter/material.dart";
 import "package:logging/logging.dart";
 

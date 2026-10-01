@@ -1,12 +1,12 @@
-// import "package:flow/constants.dart";
-import "package:flow/constants.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/routes/preferences/sections/icloud.dart";
-import "package:flow/services/sync/icloud_syncer.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/info_text.dart";
-import "package:flow/widgets/general/list_header.dart";
+// import "package:spendly/constants.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/routes/preferences/sections/icloud.dart";
+import "package:spendly/services/sync/icloud_syncer.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/info_text.dart";
+import "package:spendly/widgets/general/list_header.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 

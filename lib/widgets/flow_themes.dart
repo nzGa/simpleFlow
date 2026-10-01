@@ -1,4 +1,4 @@
-import "package:flow/widgets/transaction_list_tile_theme.dart";
+import "package:spendly/widgets/transaction_list_tile_theme.dart";
 import "package:flutter/material.dart";
 
 class FlowThemes extends StatelessWidget {

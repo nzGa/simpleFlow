@@ -3,7 +3,7 @@ import "dart:io";
 import "dart:typed_data";
 import "package:charset/charset.dart";
 import "package:csv/csv.dart";
-import "package:flow/utils/line_break_normalizer.dart";
+import "package:spendly/utils/line_break_normalizer.dart";
 import "package:logging/logging.dart";
 
 final Logger _log = Logger("CsvParser");

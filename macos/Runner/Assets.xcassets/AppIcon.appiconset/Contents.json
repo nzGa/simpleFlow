@@ -7,6 +7,12 @@
         {
             "size": "16x16",
             "idiom": "mac",
+            "filename": "app_icon_16.png",
+            "scale": "1x"
+        },
+        {
+            "size": "16x16",
+            "idiom": "mac",
             "filename": "app_icon_32.png",
             "scale": "2x"
         },

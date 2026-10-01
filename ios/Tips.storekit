@@ -15,7 +15,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "mn.flow.flow.tip.small",
+      "productID" : "com.nzga.spendly.tip.small",
       "referenceName" : "Flow - Small Tip",
       "type" : "Consumable"
     },
@@ -30,7 +30,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "mn.flow.flow.tip.medium",
+      "productID" : "com.nzga.spendly.tip.medium",
       "referenceName" : "Flow - Medium Tip",
       "type" : "Consumable"
     },
@@ -45,7 +45,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "mn.flow.flow.tip.large",
+      "productID" : "com.nzga.spendly.tip.large",
       "referenceName" : "Flow - Large Tip",
       "type" : "Consumable"
     }

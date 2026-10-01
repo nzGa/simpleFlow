@@ -1,11 +1,11 @@
 import "dart:developer";
 
 import "package:dashed_border/dashed_border.dart";
-import "package:flow/data/flow_button_type.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/widgets/general/info_text.dart";
-import "package:flow/widgets/home/preferences/button_order_preferences/transaction_type_button.dart";
+import "package:spendly/data/flow_button_type.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/widgets/general/info_text.dart";
+import "package:spendly/widgets/home/preferences/button_order_preferences/transaction_type_button.dart";
 import "package:flutter/material.dart";
 
 class ButtonOrderPreferencesPage extends StatefulWidget {

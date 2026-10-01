@@ -1,5 +1,5 @@
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/utils/time_and_range.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/utils/time_and_range.dart";
 import "package:moment_dart/moment_dart.dart";
 
 class PendingTimeRange with LocalizedEnum {

@@ -1,14 +1,14 @@
 import "dart:io";
 
-import "package:flow/l10n/extensions.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/color_themes/registry.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/theme/names.dart";
-import "package:flow/utils/extensions.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/list_header.dart";
-import "package:flow/widgets/theme_petal_selector.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/color_themes/registry.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/theme/names.dart";
+import "package:spendly/utils/extensions.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/list_header.dart";
+import "package:spendly/widgets/theme_petal_selector.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

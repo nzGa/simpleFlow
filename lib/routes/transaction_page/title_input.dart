@@ -1,9 +1,9 @@
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/frame.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/frame.dart";
 import "package:flutter/material.dart";
 
 class TitleInput extends StatelessWidget {

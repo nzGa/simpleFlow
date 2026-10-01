@@ -1,14 +1,14 @@
-import "package:flow/entity/account.dart";
-import "package:flow/entity/budget.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/file_attachment.dart";
-import "package:flow/entity/profile.dart";
-import "package:flow/entity/recurring_transaction.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/entity/transaction_filter_preset.dart";
-import "package:flow/entity/transaction_tag.dart";
-import "package:flow/entity/user_preferences.dart";
-import "package:flow/sync/model/base.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/file_attachment.dart";
+import "package:spendly/entity/profile.dart";
+import "package:spendly/entity/recurring_transaction.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/entity/transaction_filter_preset.dart";
+import "package:spendly/entity/transaction_tag.dart";
+import "package:spendly/entity/user_preferences.dart";
+import "package:spendly/sync/model/base.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "model_v2.g.dart";

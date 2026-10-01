@@ -1,9 +1,9 @@
 import "dart:async";
 
-import "package:flow/entity/budget.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/services/budget_widget_sync.dart";
-import "package:flow/services/widget_summary_sync.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/services/budget_widget_sync.dart";
+import "package:spendly/services/widget_summary_sync.dart";
 
 /// One entry point for refreshing every home-screen widget.
 ///

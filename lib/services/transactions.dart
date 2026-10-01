@@ -1,8 +1,8 @@
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/services/user_preferences.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/services/user_preferences.dart";
 import "package:logging/logging.dart";
 import "package:moment_dart/moment_dart.dart";
 

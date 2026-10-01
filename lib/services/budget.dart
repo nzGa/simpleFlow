@@ -1,18 +1,18 @@
 import "dart:isolate";
 
-import "package:flow/data/budget_progress.dart";
-import "package:flow/data/budget_spec.dart";
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/money.dart";
-import "package:flow/data/single_currency_flow.dart";
-import "package:flow/data/string_multi_filter.dart";
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/data/transactions_filter/time_range.dart";
-import "package:flow/entity/budget.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/objectbox/objectbox.g.dart";
+import "package:spendly/data/budget_progress.dart";
+import "package:spendly/data/budget_spec.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/data/single_currency_flow.dart";
+import "package:spendly/data/string_multi_filter.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/data/transactions_filter/time_range.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
 import "package:logging/logging.dart";
 import "package:moment_dart/moment_dart.dart";
 

@@ -1,6 +1,6 @@
-import "package:flow/data/money.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/reports/report.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/reports/report.dart";
 
 class TrendsReport extends FlowReport {
   final List<Transaction> transactions;

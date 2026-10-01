@@ -1,4 +1,4 @@
-import "package:flow/data/flow_icon.dart";
+import "package:spendly/data/flow_icon.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:path/path.dart" as path;
 

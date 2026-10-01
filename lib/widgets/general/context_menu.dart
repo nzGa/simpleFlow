@@ -1,4 +1,4 @@
-import "package:flow/l10n/extensions.dart";
+import "package:spendly/l10n/extensions.dart";
 import "package:flutter/gestures.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";

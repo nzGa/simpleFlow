@@ -1,7 +1,7 @@
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/money.dart";
-import "package:flow/data/single_currency_flow.dart";
-import "package:flow/services/currency_registry.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/data/single_currency_flow.dart";
+import "package:spendly/services/currency_registry.dart";
 
 /// A little class that sums expense/income separately for each currency.
 ///

@@ -1,6 +1,6 @@
-import "package:flow/data/budget_progress.dart";
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/backup_entry.dart";
+import "package:spendly/data/budget_progress.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/backup_entry.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:simple_icons_flow/simple_icons_flow.dart";
 

@@ -1,7 +1,7 @@
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/sync/model/base.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/sync/model/base.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "model_v1.g.dart";

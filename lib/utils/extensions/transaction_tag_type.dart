@@ -1,4 +1,4 @@
-import "package:flow/entity/transaction/tag_type.dart";
+import "package:spendly/entity/transaction/tag_type.dart";
 import "package:flutter/widgets.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

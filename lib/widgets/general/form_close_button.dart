@@ -1,5 +1,5 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/utils/utils.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

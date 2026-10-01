@@ -1,6 +1,6 @@
-import "package:flow/data/money.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/money_text.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/money_text.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

@@ -1,4 +1,4 @@
-import "package:flow/entity/account.dart";
+import "package:spendly/entity/account.dart";
 
 /// One account's current balance, as a slice of total net worth.
 class AccountBalanceShare {

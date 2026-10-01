@@ -1,13 +1,13 @@
 import "dart:math" as math;
 
 import "package:auto_size_text/auto_size_text.dart";
-import "package:flow/data/money.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/routes/transaction_page/input_amount_sheet/input_value.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/context_menu.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/routes/transaction_page/input_amount_sheet/input_value.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/context_menu.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 

@@ -1,5 +1,5 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/sync/model/csv/parsers.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/sync/model/csv/parsers.dart";
 
 class CSVParsedTransaction {
   final String title;

@@ -1,9 +1,9 @@
 import "dart:async";
 
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/services/user_preferences.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/services/user_preferences.dart";
 import "package:flutter/widgets.dart";
 
 /// Wires a [State] to the primary currency, its exchange rates, and the

@@ -1,4 +1,4 @@
-import "package:flow/l10n/named_enum.dart";
+import "package:spendly/l10n/named_enum.dart";
 import "package:logging/logging.dart";
 
 final Logger _log = Logger("CSVCellParser");

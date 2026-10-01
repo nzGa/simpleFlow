@@ -2,13 +2,13 @@ import "dart:math" as math;
 
 import "package:auto_size_text/auto_size_text.dart";
 import "package:fl_chart/fl_chart.dart";
-import "package:flow/data/money.dart";
-import "package:flow/reports/interval_flow_report.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/widgets/chart_legend.dart";
-import "package:flow/widgets/general/money_text.dart";
-import "package:flow/widgets/general/spinner.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/reports/interval_flow_report.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/widgets/chart_legend.dart";
+import "package:spendly/widgets/general/money_text.dart";
+import "package:spendly/widgets/general/spinner.dart";
 import "package:flutter/widgets.dart";
 import "package:moment_dart/moment_dart.dart";
 

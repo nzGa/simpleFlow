@@ -1,18 +1,18 @@
 import "dart:math" as math;
 
 import "package:fl_chart/fl_chart.dart";
-import "package:flow/data/chart_data.dart";
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/flow_icon.dart";
-import "package:flow/data/money.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/main.dart";
-import "package:flow/theme/primary_colors.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/money_text.dart";
-import "package:flow/widgets/home/stats/pie_percent_badge.dart";
+import "package:spendly/data/chart_data.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/main.dart";
+import "package:spendly/theme/primary_colors.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/money_text.dart";
+import "package:spendly/widgets/home/stats/pie_percent_badge.dart";
 import "package:flutter/material.dart" hide Flow;
 
 class GroupPieChart<T> extends StatefulWidget {

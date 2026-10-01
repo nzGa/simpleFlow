@@ -1,10 +1,10 @@
-import "package:flow/data/recurrence_mode.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/routes/transaction_page/select_recurrence/input_occurrences_sheet.dart";
-import "package:flow/routes/transaction_page/select_recurrence/select_until_mode_sheet.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/extensions/custom_popups.dart";
+import "package:spendly/data/recurrence_mode.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/routes/transaction_page/select_recurrence/input_occurrences_sheet.dart";
+import "package:spendly/routes/transaction_page/select_recurrence/select_until_mode_sheet.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/extensions/custom_popups.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 import "package:moment_dart/moment_dart.dart";

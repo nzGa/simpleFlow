@@ -1,13 +1,13 @@
-import "package:flow/data/money.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/services/exchange_rates.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/money_text.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/services/exchange_rates.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/money_text.dart";
 import "package:flutter/material.dart";
 
 class TotalBalance extends StatefulWidget {

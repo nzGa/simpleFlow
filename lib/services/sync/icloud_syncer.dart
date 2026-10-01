@@ -1,13 +1,13 @@
 import "dart:async";
 import "dart:io";
 
-import "package:flow/constants.dart";
-import "package:flow/entity/backup_entry.dart";
-import "package:flow/entity/user_preferences.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/prefs/transitive.dart";
-import "package:flow/services/sync/syncer.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/constants.dart";
+import "package:spendly/entity/backup_entry.dart";
+import "package:spendly/entity/user_preferences.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/prefs/transitive.dart";
+import "package:spendly/services/sync/syncer.dart";
+import "package:spendly/utils/utils.dart";
 import "package:flutter/foundation.dart";
 import "package:icloud_storage/icloud_storage.dart";
 import "package:logging/logging.dart";
@@ -21,7 +21,7 @@ final Logger _log = Logger("ICloudSyncer");
 class ICloudSyncer implements Syncer {
   static ICloudSyncer? _instance;
 
-  static const String containerId = "iCloud.mn.flow.flow";
+  static const String containerId = "iCloud.com.nzga.spendly";
 
   static bool get supported => Platform.isIOS || Platform.isMacOS;
 

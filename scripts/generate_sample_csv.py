@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate the bundled six-month sample CSV.
 
-  python3 scripts/generate_sample_csv.py --today 2026-09-14
+    python3 scripts/generate_sample_csv.py --today 2026-10-01
 
 The Profile button loads assets/sample_import.csv. Positive amounts are
 income; negative amounts are expenses. Transfers are two rows with the
@@ -9,6 +9,9 @@ same title, time, and opposite amounts (no category). Categorized
 inflows use only Nómina. Opening balances stay uncategorized so they
 are not tagged with expense categories. There is no category named
 Ahorrado — that word is a cash-flow surplus label, not sample data.
+
+Source amounts are modeled in ARS and USD for balance calculations, then
+written as illustrative EUR amounts in the sample CSV.
 """
 
 from __future__ import annotations
@@ -34,7 +37,14 @@ HEADERS = [
 PRINCIPAL = "Principal"
 EFECTIVO = "Efectivo"
 AHORROS = "Ahorros"
-DOLARES = "Dólares"
+EUROS = "Euros"
+
+EUR_PER_SOURCE_UNIT = {
+    PRINCIPAL: 0.001,
+    EFECTIVO: 0.001,
+    AHORROS: 0.001,
+    EUROS: 0.92,
+}
 
 NOMINA = "Nómina"
 ALQUILER = "Alquiler"
@@ -111,7 +121,7 @@ class Ledger:
             PRINCIPAL: 0.0,
             EFECTIVO: 0.0,
             AHORROS: 0.0,
-            DOLARES: 0.0,
+            EUROS: 0.0,
         }
 
     def add(
@@ -164,6 +174,9 @@ class Ledger:
             row
             for _, _, row in sorted(self.rows, key=lambda item: (item[0], item[1]))
         ]
+        for row in ordered:
+            row[3] = f"{float(row[3]) * EUR_PER_SOURCE_UNIT[row[2]]:.2f}"
+
         with path.open("w", encoding="utf-8", newline="") as handle:
             writer = csv.writer(handle, lineterminator="\n")
             writer.writerow(HEADERS)
@@ -177,7 +190,7 @@ def seed_opening_balances(ledger: Ledger, start: date) -> None:
     ledger.add(opening, PRINCIPAL, 2_100_000.00, "Saldo inicial")
     ledger.add(opening, EFECTIVO, 68_500.00, "Saldo inicial")
     ledger.add(opening, AHORROS, 1_800_000.00, "Saldo inicial")
-    ledger.add(opening, DOLARES, 2_400.00, "Saldo inicial")
+    ledger.add(opening, EUROS, 2_400.00, "Saldo inicial")
 
 
 def add_recurring(ledger: Ledger, rng: random.Random, day: date) -> None:
@@ -368,9 +381,9 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
     if day.day == 15:
         ledger.add(
             datetime.combine(day, time(17, 40, 0)),
-            DOLARES,
+            EUROS,
             money(rng, 280, 480, 2),
-            "Freelance USD",
+            "Freelance EUR",
             NOMINA,
             "Cliente en el exterior",
         )
@@ -423,11 +436,11 @@ def add_income(ledger: Ledger, rng: random.Random, day: date) -> None:
         )
 
 
-def add_usd_spend(ledger: Ledger, rng: random.Random, day: date) -> None:
+def add_eur_spend(ledger: Ledger, rng: random.Random, day: date) -> None:
     if day.month == 5 and day.day == 8:
         ledger.add(
             datetime.combine(day, time(21, 12, 0)),
-            DOLARES,
+            EUROS,
             -14.99,
             "Steam",
             AFICIONES,
@@ -436,7 +449,7 @@ def add_usd_spend(ledger: Ledger, rng: random.Random, day: date) -> None:
     if day.month == 7 and day.day == 3:
         ledger.add(
             datetime.combine(day, time(11, 5, 0)),
-            DOLARES,
+            EUROS,
             -89.00,
             "Cursor Pro",
             SUSCRIPCIONES,
@@ -690,7 +703,7 @@ def generate(today: date, seed: int) -> Ledger:
         add_income(ledger, rng, cursor)
         if cursor.day == 25:
             add_payday(ledger, rng, cursor)
-        add_usd_spend(ledger, rng, cursor)
+        add_eur_spend(ledger, rng, cursor)
         add_winter_trip(ledger, rng, cursor)
         add_daily_spend(ledger, rng, cursor)
         cursor += timedelta(days=1)

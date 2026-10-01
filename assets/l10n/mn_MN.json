@@ -32,7 +32,7 @@
   "account.updateBalance.updateAtDate.description": "Тодорхой хугацаан дахь үлдэгдлээ мэдэж байгаа үед тохиромжтой",
   "account.updateBalance.updateCurrent": "Одоогийн үлдэгдэл өөрчлөх",
   "accounts": "Данснууд",
-  "appName": "simpleFlow",
+  "appName": "Spendly",
   "appShortDesc": "Таны хувийн санхүүч",
   "budget.alert.action": "Шалгах",
   "budget.alert.left": "{amount} үлдсэн",

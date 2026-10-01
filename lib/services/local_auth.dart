@@ -1,6 +1,6 @@
 import "dart:io";
 
-import "package:flow/l10n/extensions.dart";
+import "package:spendly/l10n/extensions.dart";
 import "package:local_auth/local_auth.dart";
 import "package:logging/logging.dart";
 

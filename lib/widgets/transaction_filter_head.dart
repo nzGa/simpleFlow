@@ -1,5 +1,5 @@
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/theme/theme.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 
 /// Renders a row of [TransactionFilterChip]s.

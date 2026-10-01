@@ -1,14 +1,14 @@
 import "dart:async";
 
-import "package:flow/data/transaction_filter.dart";
-import "package:flow/entity/backup_entry.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/services/sync/icloud_syncer.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/sync/export.dart";
-import "package:flow/utils/should_execute_scheduled_task.dart";
+import "package:spendly/data/transaction_filter.dart";
+import "package:spendly/entity/backup_entry.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/services/sync/icloud_syncer.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/sync/export.dart";
+import "package:spendly/utils/should_execute_scheduled_task.dart";
 import "package:logging/logging.dart";
 import "package:moment_dart/moment_dart.dart";
 
@@ -28,8 +28,8 @@ class SyncService {
 
     try {
       if (ICloudSyncer.supported &&
-          ICloudSyncer().syncing &&
-          UserPreferencesService().enableICloudSync) {
+          UserPreferencesService().enableICloudSync &&
+          ICloudSyncer().syncing) {
         value++;
       }
     } catch (e) {
@@ -43,7 +43,8 @@ class SyncService {
 
   SyncService._internal() {
     triggerAutoBackup().then((_) {
-      if (ICloudSyncer.supported) {
+      if (ICloudSyncer.supported &&
+          UserPreferencesService().enableICloudSync) {
         Future.delayed(const Duration(seconds: 2)).then((_) {
           ICloudSyncer().purge(
             keepCount: UserPreferencesService().iCloudBackupsToKeep ?? 5,

@@ -3,9 +3,9 @@ import "dart:typed_data";
 import "dart:ui" as ui;
 
 import "package:file_picker/file_picker.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/routes/utils/crop_square_image_page.dart";
-import "package:flow/utils/extensions/toast.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/routes/utils/crop_square_image_page.dart";
+import "package:spendly/utils/extensions/toast.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:http/http.dart" as http;

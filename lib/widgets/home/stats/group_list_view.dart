@@ -1,8 +1,8 @@
-import "package:flow/data/chart_data.dart";
-import "package:flow/data/money.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/widgets/home/stats/group_list_tile.dart";
-import "package:flow/widgets/home/stats/no_data.dart";
+import "package:spendly/data/chart_data.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/widgets/home/stats/group_list_tile.dart";
+import "package:spendly/widgets/home/stats/no_data.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:moment_dart/moment_dart.dart";

@@ -1,4 +1,4 @@
-import "package:flow/data/multi_currency_flow.dart";
+import "package:spendly/data/multi_currency_flow.dart";
 import "package:moment_dart/moment_dart.dart";
 
 class FlowAnalytics<T> {

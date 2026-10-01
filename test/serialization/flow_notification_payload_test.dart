@@ -1,4 +1,4 @@
-import "package:flow/data/flow_notification_payload.dart";
+import "package:spendly/data/flow_notification_payload.dart";
 import "package:flutter_test/flutter_test.dart";
 
 /// So AI generated, please don't pay attention to the names lol

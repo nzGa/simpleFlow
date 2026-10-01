@@ -1,12 +1,12 @@
 import "dart:math" as math;
 
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/money.dart";
-import "package:flow/data/multi_currency_flow.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/services/user_preferences.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/data/multi_currency_flow.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/services/user_preferences.dart";
 import "package:moment_dart/moment_dart.dart";
 
 /// Only capable of working with the primary currency

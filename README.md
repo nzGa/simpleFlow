@@ -1,6 +1,7 @@
-# ![Flow logo](logo@32.png) simpleFlow
+# Spendly
 
-Personal simple expense tracker app. Modified version of [Flow](https://github.com/flow-mn/flow) (September 2026). It remains free software under the [GNU General Public License v3](./LICENSE).
+Personal simple expense tracker app.
+Modified version of [Flow](https://github.com/flow-mn/flow) (September 2026). It remains free software under the [GNU General Public License v3](./LICENSE).
 
 Original copyright: Copyright (C) 2024 Batmend Ganbaatar and authors of Flow.
 See [NOTICE](./NOTICE) for attribution and a summary of what changed.
@@ -12,7 +13,7 @@ clone the repo and run it locally (see [Development](#development)).
 ## What it is
 
 Accounts, transactions, categories, and spending stats. Build from source
-(macOS and Linux work; Windows is untested). Web is not supported (ObjectBox).
+(macOS; Linux and Windows untested). Web is not supported (ObjectBox).
 
 Compared with upstream Flow, the app no longer includes Eny, in-app
 support/community and IAP, maps and geo tagging, attachments / camera /
@@ -29,7 +30,7 @@ Existing backup data for those features is still imported.
   - No trackers, no analytics
   - Recoverable backups (ZIP/JSON)
   - Export CSV and PDFs
-- UI languages: English, Spanish, Portuguese (Brazil)[^2]
+- UI languages: English, Spanish, Portuguese
 
 ## Development
 
@@ -79,6 +80,3 @@ To support the original maintainer:
 [^1]: Works without an account or our own backend. Network is only used for
 exchange rates when you have more than one currency, and for iCloud backups
 if you turn that on (Apple platforms).
-
-[^2]: Portuguese uses English app strings until a full translation exists.
-Material widgets can still follow the system Portuguese locale.

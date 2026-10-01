@@ -1,8 +1,8 @@
 import "dart:io";
 
-import "package:flow/sync/model/csv/csv_parsed_transaction.dart";
-import "package:flow/sync/model/csv/parsers.dart";
-import "package:flow/utils/csv_parser.dart";
+import "package:spendly/sync/model/csv/csv_parsed_transaction.dart";
+import "package:spendly/sync/model/csv/parsers.dart";
+import "package:spendly/utils/csv_parser.dart";
 
 class CSVParsedData {
   /// `null` for irrelevant columns

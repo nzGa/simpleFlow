@@ -1,8 +1,8 @@
-import "package:flow/data/money.dart";
-import "package:flow/data/multi_currency_flow.dart";
-import "package:flow/data/single_currency_flow.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/reports/report.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/data/multi_currency_flow.dart";
+import "package:spendly/data/single_currency_flow.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/reports/report.dart";
 
 /// A report that summarizes transactions in a given time range by intervals.
 ///

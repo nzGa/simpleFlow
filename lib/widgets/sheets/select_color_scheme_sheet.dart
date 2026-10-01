@@ -1,10 +1,10 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/flow_theme_group.dart";
-import "package:flow/utils/optional.dart";
-import "package:flow/widgets/general/modal_overflow_bar.dart";
-import "package:flow/widgets/general/modal_sheet.dart";
-import "package:flow/widgets/theme_petal_selector.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/flow_theme_group.dart";
+import "package:spendly/utils/optional.dart";
+import "package:spendly/widgets/general/modal_overflow_bar.dart";
+import "package:spendly/widgets/general/modal_sheet.dart";
+import "package:spendly/widgets/theme_petal_selector.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

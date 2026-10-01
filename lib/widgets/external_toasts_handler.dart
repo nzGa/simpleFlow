@@ -1,7 +1,7 @@
 import "dart:async";
 
-import "package:flow/services/external_toasts.dart";
-import "package:flow/utils/extensions/toast.dart";
+import "package:spendly/services/external_toasts.dart";
+import "package:spendly/utils/extensions/toast.dart";
 import "package:flutter/widgets.dart";
 
 class ExternalToastsHandler extends StatefulWidget {

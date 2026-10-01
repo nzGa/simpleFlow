@@ -1,8 +1,8 @@
-import "package:flow/entity/transaction_filter_preset.dart";
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/general/directional_slidable.dart";
+import "package:spendly/entity/transaction_filter_preset.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/general/directional_slidable.dart";
 import "package:flutter/material.dart";
 import "package:flutter_slidable/flutter_slidable.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

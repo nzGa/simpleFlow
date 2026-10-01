@@ -1,6 +1,6 @@
-import "package:flow/entity/category.dart";
-import "package:flow/utils/optional.dart";
-import "package:flow/widgets/category_card.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/utils/optional.dart";
+import "package:spendly/widgets/category_card.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

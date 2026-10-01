@@ -1,15 +1,15 @@
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/providers/accounts_provider.dart";
-import "package:flow/utils/utils.dart";
-import "package:flow/widgets/select_bulk_transactions_action_sheet.dart";
-import "package:flow/widgets/sheets/select_account_sheet.dart";
-import "package:flow/widgets/sheets/select_category_sheet.dart";
-import "package:flow/widgets/transactions_selection_bar.dart";
-import "package:flow/widgets/transactions_selection_controller.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/providers/accounts_provider.dart";
+import "package:spendly/utils/utils.dart";
+import "package:spendly/widgets/select_bulk_transactions_action_sheet.dart";
+import "package:spendly/widgets/sheets/select_account_sheet.dart";
+import "package:spendly/widgets/sheets/select_category_sheet.dart";
+import "package:spendly/widgets/transactions_selection_bar.dart";
+import "package:spendly/widgets/transactions_selection_controller.dart";
 import "package:flutter/material.dart";
 
 /// Wraps [child] with the bulk-selection bottom bar, action picker, and

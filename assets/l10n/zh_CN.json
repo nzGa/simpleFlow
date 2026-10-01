@@ -32,7 +32,7 @@
   "account.updateBalance.updateAtDate.description": "如果您确切知道某个特定日期的余额，适用此选项",
   "account.updateBalance.updateCurrent": "更新当前余额",
   "accounts": "账户",
-  "appName": "simpleFlow",
+  "appName": "Spendly",
   "appShortDesc": "您的个人理财追踪器",
   "budget.alert.action": "查看",
   "budget.alert.left": "剩余 {amount}",

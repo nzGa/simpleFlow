@@ -1,8 +1,8 @@
 import "dart:convert";
 
-import "package:flow/entity/_base.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/utils/json/utc_datetime_converter.dart";
+import "package:spendly/entity/_base.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/utils/json/utc_datetime_converter.dart";
 import "package:json_annotation/json_annotation.dart";
 import "package:moment_dart/moment_dart.dart";
 import "package:objectbox/objectbox.dart";

@@ -1,5 +1,5 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/theme/flow_color_scheme.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
 
 class FlowThemeGroup {
   final String name;

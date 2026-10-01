@@ -1,19 +1,19 @@
 import "dart:async";
 
-import "package:flow/data/setup/default_categories.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/entity/backup_entry.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/named_enum.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/prefs/transitive.dart";
-import "package:flow/services/transactions.dart";
-import "package:flow/sync/exception.dart";
-import "package:flow/sync/import/base.dart";
-import "package:flow/sync/sync.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/data/setup/default_categories.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/backup_entry.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/named_enum.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/prefs/transitive.dart";
+import "package:spendly/services/transactions.dart";
+import "package:spendly/sync/exception.dart";
+import "package:spendly/sync/import/base.dart";
+import "package:spendly/sync/sync.dart";
+import "package:spendly/utils/utils.dart";
 import "package:flutter/widgets.dart";
 import "package:logging/logging.dart";
 

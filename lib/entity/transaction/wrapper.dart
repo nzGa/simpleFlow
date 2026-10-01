@@ -1,11 +1,11 @@
 import "dart:convert";
 
-import "package:flow/entity/transaction/extensions/base.dart";
-import "package:flow/entity/transaction/extensions/default/eny_receipt.dart";
-import "package:flow/entity/transaction/extensions/default/geo.dart";
-import "package:flow/entity/transaction/extensions/default/recurring.dart";
-import "package:flow/entity/transaction/extensions/default/transfer.dart";
-import "package:flow/utils/utils.dart";
+import "package:spendly/entity/transaction/extensions/base.dart";
+import "package:spendly/entity/transaction/extensions/default/eny_receipt.dart";
+import "package:spendly/entity/transaction/extensions/default/geo.dart";
+import "package:spendly/entity/transaction/extensions/default/recurring.dart";
+import "package:spendly/entity/transaction/extensions/default/transfer.dart";
+import "package:spendly/utils/utils.dart";
 import "package:logging/logging.dart";
 
 final Logger _log = Logger("ExtensionsWrapper");

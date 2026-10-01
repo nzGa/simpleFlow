@@ -1,10 +1,10 @@
 import "dart:convert";
 
-import "package:flow/data/exchange_rates.dart";
-import "package:flow/data/exchange_rates_set.dart";
-import "package:flow/prefs/local_preferences.dart";
-import "package:flow/services/currency_registry.dart";
-import "package:flow/services/user_preferences.dart";
+import "package:spendly/data/exchange_rates.dart";
+import "package:spendly/data/exchange_rates_set.dart";
+import "package:spendly/prefs/local_preferences.dart";
+import "package:spendly/services/currency_registry.dart";
+import "package:spendly/services/user_preferences.dart";
 import "package:flutter/widgets.dart";
 import "package:http/http.dart" as http;
 import "package:logging/logging.dart";

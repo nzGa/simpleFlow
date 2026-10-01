@@ -1,5 +1,5 @@
-import "package:flow/l10n/flow_localizations.dart";
-import "package:flow/l10n/supported_languages.dart";
+import "package:spendly/l10n/flow_localizations.dart";
+import "package:spendly/l10n/supported_languages.dart";
 import "package:flutter/widgets.dart";
 
 extension L10nHelper on BuildContext {

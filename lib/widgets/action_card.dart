@@ -1,7 +1,7 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/surface.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/surface.dart";
 import "package:flutter/material.dart";
 
 class ActionCard extends StatelessWidget {

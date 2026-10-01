@@ -1,10 +1,10 @@
 import "dart:math" as math;
 
 import "package:fl_chart/fl_chart.dart";
-import "package:flow/data/money.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/money_text.dart";
-import "package:flow/widgets/stats/net_worth/net_worth_sample.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/money_text.dart";
+import "package:spendly/widgets/stats/net_worth/net_worth_sample.dart";
 import "package:flutter/material.dart";
 import "package:moment_dart/moment_dart.dart";
 

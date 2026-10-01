@@ -1,6 +1,6 @@
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/helpers.dart";
-import "package:flow/widgets/transactions_selection_controller.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/helpers.dart";
+import "package:spendly/widgets/transactions_selection_controller.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

@@ -1,4 +1,4 @@
-import "package:flow/entity/_base.dart";
+import "package:spendly/entity/_base.dart";
 import "package:flutter/foundation.dart";
 import "package:json_annotation/json_annotation.dart";
 

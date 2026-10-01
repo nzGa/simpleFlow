@@ -1,7 +1,7 @@
 import "package:auto_size_text/auto_size_text.dart";
-import "package:flow/data/money.dart";
-import "package:flow/widgets/general/money_text_builder.dart";
-import "package:flow/widgets/general/money_text_raw.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/widgets/general/money_text_builder.dart";
+import "package:spendly/widgets/general/money_text_raw.dart";
 import "package:flutter/material.dart";
 
 class MoneyText extends StatelessWidget {

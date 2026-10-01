@@ -1,4 +1,4 @@
-import "package:flow/widgets/general/frame.dart";
+import "package:spendly/widgets/general/frame.dart";
 import "package:flutter/material.dart";
 
 /// Centered placeholder shown inside a [Frame] when an analytics section has no

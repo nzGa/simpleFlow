@@ -1,7 +1,7 @@
-import "package:flow/data/flow_icon.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/objectbox.dart";
+import "package:spendly/data/flow_icon.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/objectbox.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 
 List<Account> getAccountPresets(String currency) {

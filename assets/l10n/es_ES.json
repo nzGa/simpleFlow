@@ -32,7 +32,7 @@
   "account.updateBalance.updateAtDate.description": "Ideal si conoces el saldo exacto en una fecha específica",
   "account.updateBalance.updateCurrent": "Actualizar saldo actual",
   "accounts": "Cuentas",
-  "appName": "simpleFlow",
+  "appName": "Spendly",
   "appShortDesc": "Tu rastreador de finanzas personales",
   "budget.alert.action": "Revisar",
   "budget.alert.left": "Quedan {amount}",

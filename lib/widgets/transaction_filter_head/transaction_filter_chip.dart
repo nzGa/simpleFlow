@@ -1,7 +1,7 @@
-import "package:flow/entity/account.dart";
-import "package:flow/entity/category.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/utils/extensions/transaction_filter.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/entity/category.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/utils/extensions/transaction_filter.dart";
 import "package:flutter/foundation.dart" hide Category;
 import "package:flutter/material.dart";
 

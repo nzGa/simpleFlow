@@ -1,6 +1,6 @@
 import "dart:math" as math;
 
-import "package:flow/theme/theme.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 
 /// A compact bullet chart for budget-vs-actual style comparisons.

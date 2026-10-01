@@ -1,8 +1,8 @@
 import "dart:async";
 
-import "package:flow/entity/budget.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/utils/primary_currency_dependent_state.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/utils/primary_currency_dependent_state.dart";
 import "package:flutter/widgets.dart";
 
 /// Re-runs [PrimaryCurrencyDependentState.fetch] whenever a budget is created,

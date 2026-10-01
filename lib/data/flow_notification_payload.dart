@@ -1,6 +1,6 @@
 import "dart:convert";
 
-import "package:flow/utils/extensions.dart";
+import "package:spendly/utils/extensions.dart";
 import "package:json_annotation/json_annotation.dart";
 
 part "flow_notification_payload.g.dart";

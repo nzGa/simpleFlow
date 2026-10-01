@@ -1,5 +1,5 @@
-import "package:flow/widgets/general/button.dart";
-import "package:flow/utils/time_and_range.dart";
+import "package:spendly/widgets/general/button.dart";
+import "package:spendly/utils/time_and_range.dart";
 import "package:flutter/material.dart";
 import "package:material_symbols_icons_flow/symbols.dart";
 

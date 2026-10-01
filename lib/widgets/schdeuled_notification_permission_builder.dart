@@ -1,6 +1,6 @@
 import "dart:io";
 
-import "package:flow/services/notifications.dart";
+import "package:spendly/services/notifications.dart";
 import "package:flutter/widgets.dart";
 import "package:permission_handler/permission_handler.dart";
 

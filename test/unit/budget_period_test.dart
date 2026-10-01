@@ -1,9 +1,9 @@
 import "dart:io";
 
-import "package:flow/data/budget_progress.dart";
-import "package:flow/entity/budget.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/services/budget.dart";
+import "package:spendly/data/budget_progress.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/services/budget.dart";
 import "package:flutter_test/flutter_test.dart";
 import "package:moment_dart/moment_dart.dart";
 import "package:path/path.dart" as path;

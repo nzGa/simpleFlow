@@ -1,12 +1,12 @@
 import "dart:async";
 
-import "package:flow/data/exchange_rates_set.dart";
-import "package:flow/entity/account.dart";
-import "package:flow/logging.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/prefs/pending_transactions.dart";
-import "package:flow/prefs/transitive.dart";
+import "package:spendly/data/exchange_rates_set.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/logging.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/prefs/pending_transactions.dart";
+import "package:spendly/prefs/transitive.dart";
 import "package:intl/intl.dart";
 import "package:local_settings/local_settings.dart";
 import "package:shared_preferences/shared_preferences.dart";

@@ -1,4 +1,4 @@
-import "package:flow/reports/category_flow_report.dart";
+import "package:spendly/reports/category_flow_report.dart";
 import "package:flutter/material.dart";
 
 class CategoryReportView extends StatelessWidget {

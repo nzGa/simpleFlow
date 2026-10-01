@@ -1,16 +1,16 @@
 import "dart:io";
 
-import "package:flow/logging.dart";
-import "package:flow/theme/color_themes/catppuccin/frappe.dart";
-import "package:flow/theme/color_themes/catppuccin/macchiato.dart";
-import "package:flow/theme/color_themes/catppuccin/mocha.dart";
-import "package:flow/theme/color_themes/flow/flow_darks.dart";
-import "package:flow/theme/color_themes/flow/flow_lights.dart";
-import "package:flow/theme/color_themes/flow/flow_oleds.dart";
-import "package:flow/theme/color_themes/monochrome.dart";
-import "package:flow/theme/color_themes/palenight.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/flow_theme_group.dart";
+import "package:spendly/logging.dart";
+import "package:spendly/theme/color_themes/catppuccin/frappe.dart";
+import "package:spendly/theme/color_themes/catppuccin/macchiato.dart";
+import "package:spendly/theme/color_themes/catppuccin/mocha.dart";
+import "package:spendly/theme/color_themes/flow/flow_darks.dart";
+import "package:spendly/theme/color_themes/flow/flow_lights.dart";
+import "package:spendly/theme/color_themes/flow/flow_oleds.dart";
+import "package:spendly/theme/color_themes/monochrome.dart";
+import "package:spendly/theme/color_themes/palenight.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/flow_theme_group.dart";
 import "package:flutter_dynamic_icon_plus/flutter_dynamic_icon_plus.dart";
 
 export "catppuccin/frappe.dart";
@@ -22,8 +22,8 @@ export "flow/flow_oleds.dart";
 export "palenight.dart";
 export "monochrome.dart";
 
-/// First-run / unset theme: Catppuccin Frappé Sapphire.
-const String defaultThemeName = "catppuccinSapphireFrappe";
+/// First-run / unset theme: Catppuccin Frappé Yellow.
+const String defaultThemeName = "catppuccinYellowFrappe";
 
 final Map<String, FlowColorScheme> standaloneThemes = {
   "palenight": palenight,

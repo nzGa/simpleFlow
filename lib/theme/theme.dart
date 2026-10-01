@@ -1,8 +1,8 @@
-import "package:flow/theme/color_themes/registry.dart";
-import "package:flow/theme/flow_color_scheme.dart";
-import "package:flow/theme/navbar_theme.dart";
-import "package:flow/theme/pie_theme_extension.dart";
-import "package:flow/theme/text_theme.dart";
+import "package:spendly/theme/color_themes/registry.dart";
+import "package:spendly/theme/flow_color_scheme.dart";
+import "package:spendly/theme/navbar_theme.dart";
+import "package:spendly/theme/pie_theme_extension.dart";
+import "package:spendly/theme/text_theme.dart";
 import "package:flutter/material.dart";
 import "package:pie_menu/pie_menu.dart";
 

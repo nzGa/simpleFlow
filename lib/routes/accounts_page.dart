@@ -1,15 +1,15 @@
 import "dart:io";
 
-import "package:flow/entity/account.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/objectbox.dart";
-import "package:flow/objectbox/actions.dart";
-import "package:flow/objectbox/objectbox.g.dart";
-import "package:flow/services/user_preferences.dart";
-import "package:flow/widgets/account_card.dart";
-import "package:flow/widgets/general/spinner.dart";
-import "package:flow/widgets/home/home/account/no_accounts.dart";
-import "package:flow/widgets/setup/accounts/add_account_card.dart";
+import "package:spendly/entity/account.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/objectbox.dart";
+import "package:spendly/objectbox/actions.dart";
+import "package:spendly/objectbox/objectbox.g.dart";
+import "package:spendly/services/user_preferences.dart";
+import "package:spendly/widgets/account_card.dart";
+import "package:spendly/widgets/general/spinner.dart";
+import "package:spendly/widgets/home/home/account/no_accounts.dart";
+import "package:spendly/widgets/setup/accounts/add_account_card.dart";
 import "package:flutter/material.dart";
 
 class AccountsPage extends StatefulWidget {

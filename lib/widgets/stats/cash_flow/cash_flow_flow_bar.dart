@@ -1,4 +1,4 @@
-import "package:flow/theme/theme.dart";
+import "package:spendly/theme/theme.dart";
 import "package:flutter/material.dart";
 
 /// Single stacked bar whose income and expense segments are sized by their

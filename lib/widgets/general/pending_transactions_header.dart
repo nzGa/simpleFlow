@@ -1,8 +1,8 @@
-import "package:flow/entity/transaction.dart";
-import "package:flow/l10n/extensions.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/rtl_flipper.dart";
-import "package:flow/widgets/transactions_date_header.dart";
+import "package:spendly/entity/transaction.dart";
+import "package:spendly/l10n/extensions.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/rtl_flipper.dart";
+import "package:spendly/widgets/transactions_date_header.dart";
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 import "package:material_symbols_icons_flow/symbols.dart";

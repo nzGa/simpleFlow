@@ -1,9 +1,9 @@
-import "package:flow/data/money.dart";
-import "package:flow/theme/theme.dart";
-import "package:flow/widgets/general/flow_icon.dart";
-import "package:flow/widgets/general/frame.dart";
-import "package:flow/widgets/general/money_text.dart";
-import "package:flow/widgets/stats/net_worth/account_balance_share.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/theme/theme.dart";
+import "package:spendly/widgets/general/flow_icon.dart";
+import "package:spendly/widgets/general/frame.dart";
+import "package:spendly/widgets/general/money_text.dart";
+import "package:spendly/widgets/stats/net_worth/account_balance_share.dart";
 import "package:flutter/material.dart";
 
 /// One account row in the net worth "By account" breakdown: an icon, the

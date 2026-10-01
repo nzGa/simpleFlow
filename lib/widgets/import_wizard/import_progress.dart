@@ -1,4 +1,4 @@
-import "package:flow/widgets/general/spinner.dart";
+import "package:spendly/widgets/general/spinner.dart";
 import "package:flutter/material.dart";
 
 class ImportProgressIndicator extends StatelessWidget {

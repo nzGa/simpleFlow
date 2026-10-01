@@ -1,12 +1,12 @@
 import "dart:async";
 import "dart:convert";
 
-import "package:flow/l10n/supported_languages.dart";
-import "package:flow/services/home_widgets.dart";
+import "package:spendly/l10n/supported_languages.dart";
+import "package:spendly/services/home_widgets.dart";
 import "package:flutter/services.dart";
 import "package:flutter/widgets.dart";
 import "package:logging/logging.dart";
-import "package:flow/l10n/extensions.dart";
+import "package:spendly/l10n/extensions.dart";
 
 export "extensions.dart";
 

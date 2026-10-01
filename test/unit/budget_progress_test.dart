@@ -1,7 +1,7 @@
-import "package:flow/data/budget_progress.dart";
-import "package:flow/data/money.dart";
-import "package:flow/entity/budget.dart";
-import "package:flow/services/budget.dart";
+import "package:spendly/data/budget_progress.dart";
+import "package:spendly/data/money.dart";
+import "package:spendly/entity/budget.dart";
+import "package:spendly/services/budget.dart";
 import "package:flutter_test/flutter_test.dart";
 import "package:moment_dart/moment_dart.dart";
 

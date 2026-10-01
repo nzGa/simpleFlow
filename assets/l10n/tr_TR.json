@@ -32,7 +32,7 @@
   "account.updateBalance.updateAtDate.description": "Belirli bir tarihteki tam bakiyeyi biliyorsanız idealdir",
   "account.updateBalance.updateCurrent": "Mevcut bakiyeyi güncelle",
   "accounts": "Hesap",
-  "appName": "simpleFlow",
+  "appName": "Spendly",
   "appShortDesc": "Kişisel finans takipçiniz",
   "budget.alert.action": "Gözden geçir",
   "budget.alert.left": "{amount} kaldı",
